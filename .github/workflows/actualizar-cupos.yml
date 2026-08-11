@@ -53,13 +53,6 @@ jobs:
         if: steps.datecheck.outputs.run == 'true'
         run: node procesar-oferta-2026-2.js
 
-      - name: Copiar resultado a Google Drive
-        if: steps.datecheck.outputs.run == 'true'
-        env:
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
-        run: node scripts/subir-drive.js
-
       - name: Configurar GitHub Pages
         if: steps.datecheck.outputs.run == 'true'
         uses: actions/configure-pages@v5
