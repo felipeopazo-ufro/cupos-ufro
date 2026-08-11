@@ -1,0 +1,802 @@
+[
+  {
+    "Código": "COD590",
+    "Módulo": "1",
+    "Identificador": "COD590-1",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Lunes 8:30 a 10:40 y Jueves 8:30 a 9:30",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "2",
+    "Identificador": "COD590-2",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00",
+    "Sala": "New Zealand / Scottish"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "3",
+    "Identificador": "COD590-3",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Lunes 10:50 a 13:00 y Jueves 9:40 a 10:40",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "4",
+    "Identificador": "COD590-4",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Lunes 10:50 a 13:00 y Viernes 10:50 a 11:50",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "5",
+    "Identificador": "COD590-5",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Lunes 14:30 a 16:40 y Miércoles 14:30 a 15:30",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "6",
+    "Identificador": "COD590-6",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Martes 8:30 a 10:40 y Viernes 8:30 a 9:30",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "7",
+    "Identificador": "COD590-7",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Martes 8:30 a 10:40 y Miércoles 8:30 a 9:30",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "8",
+    "Identificador": "COD590-8",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Martes 8:30 a 10:40 y Miércoles 9:40 a 10:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "9",
+    "Identificador": "COD590-9",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Martes 10:50 a 13:00 y Miércoles 10:50 a 11:50",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "10",
+    "Identificador": "COD590-10",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Martes 14:30 a 16:40 y Jueves 14:30 a 15:30",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "11",
+    "Identificador": "COD590-11",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Jueves 8:30 a 10:40 y Viernes 9:40 a 10:40",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD590",
+    "Módulo": "12",
+    "Identificador": "COD590-12",
+    "Nivel": "Inglés Principiante",
+    "Horario": "Miércoles 16:50 a 19:00 y Viernes 14:30 a 15:30",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "1",
+    "Identificador": "COD594-1",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 8:30 a 10:40 y Miércoles 8:30 a 9:30",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "2",
+    "Identificador": "COD594-2",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 8:30 a 10:40 y Miércoles 9:40 a 10:40",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "3",
+    "Identificador": "COD594-3",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 10:50 a 13:00 y Martes de 9:40 a 10:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "4",
+    "Identificador": "COD594-4",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 10:50 a 13:00 y Viernes 12:00 a 13:00",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "5",
+    "Identificador": "COD594-5",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 14:30 a 16:40 y Viernes 15:40 a 16:40",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "6",
+    "Identificador": "COD594-6",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 14:30 a 16:40 y Jueves 14:30 a 15:30",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "7",
+    "Identificador": "COD594-7",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 14:30 a 16:40 y Jueves 15:40 a 16:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "8",
+    "Identificador": "COD594-8",
+    "Nivel": "Inglés Básico",
+    "Horario": "Martes 8:30 a 10:40 y Miércoles 9:40 a 10:40",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "9",
+    "Identificador": "COD594-9",
+    "Nivel": "Inglés Básico",
+    "Horario": "Martes 10:50 a 13:00 y Jueves 14:30 a 15:30",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "10",
+    "Identificador": "COD594-10",
+    "Nivel": "Inglés Básico",
+    "Horario": "Martes 10:50 a 13:00 y Jueves 9:40 a 10:40",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "11",
+    "Identificador": "COD594-11",
+    "Nivel": "Inglés Básico",
+    "Horario": "Martes 10:50 a 13:00 y Viernes 10:50 a 11:50",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "12",
+    "Identificador": "COD594-12",
+    "Nivel": "Inglés Básico",
+    "Horario": "Martes 14:30 a 16:40 y Jueves 15:40 a 16:40",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "13",
+    "Identificador": "COD594-13",
+    "Nivel": "Inglés Básico",
+    "Horario": "Martes 14:30 a 16:40 y Jueves 16:50 a 17:50",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "14",
+    "Identificador": "COD594-14",
+    "Nivel": "Inglés Básico",
+    "Horario": "Miércoles 8:30 a 10:40 y Jueves 9:40 a 10:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "15",
+    "Identificador": "COD594-15",
+    "Nivel": "Inglés Básico",
+    "Horario": "Miércoles 10:50 a 13:00 y Viernes 10:50 a 11:50",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "16",
+    "Identificador": "COD594-16",
+    "Nivel": "Inglés Básico",
+    "Horario": "Miércoles 14:30 a 16:40 y Viernes 14:30 a 15:30",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "17",
+    "Identificador": "COD594-17",
+    "Nivel": "Inglés Básico",
+    "Horario": "Miércoles 14:30 a 16:40 y Viernes 12:00 a 13:00",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "18",
+    "Identificador": "COD594-18",
+    "Nivel": "Inglés Básico",
+    "Horario": "Miércoles 16:50 a 19:00 y Jueves 15:40 a 16:40",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "19",
+    "Identificador": "COD594-19",
+    "Nivel": "Inglés Básico",
+    "Horario": "Jueves 8:30 a 10:40 y Viernes 8:30 a 9:30",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "20",
+    "Identificador": "COD594-20",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 14:30 a 16:40 y Martes 15:40 a 16:40",
+    "Sala": "Irish / Canadian"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "21",
+    "Identificador": "COD594-21",
+    "Nivel": "Inglés Básico",
+    "Horario": "Lunes 8:30 a 10:40 y Miércoles 8:30 a 9:30",
+    "Sala": "English"
+  },
+  {
+    "Código": "COD594",
+    "Módulo": "22",
+    "Identificador": "COD594-22",
+    "Nivel": "Inglés Básico",
+    "Horario": "Jueves 14:30 a 16:40 y Viernes 14:30 a 15:30",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "1",
+    "Identificador": "COD598-1",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 8:30 a 10:40",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "2",
+    "Identificador": "COD598-2",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 8:30 a 10:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "3",
+    "Identificador": "COD598-3",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 10:50 a 13:00",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "4",
+    "Identificador": "COD598-4",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 10:50 a 13:00",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "5",
+    "Identificador": "COD598-5",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 14:30 a 16:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "6",
+    "Identificador": "COD598-6",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 14:30 a 16:40",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "7",
+    "Identificador": "COD598-7",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 8:30 a 10:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "8",
+    "Identificador": "COD598-8",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 8:30 a 10:40",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "9",
+    "Identificador": "COD598-9",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 10:50 a 13:00",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "10",
+    "Identificador": "COD598-10",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 10:50 a 13:00",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "11",
+    "Identificador": "COD598-11",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 14:30 a 16:40",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "12",
+    "Identificador": "COD598-12",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 14:30 a 16:40",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "13",
+    "Identificador": "COD598-13",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Martes 16:50 a 19:00",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "14",
+    "Identificador": "COD598-14",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Lunes 14:30 a 16:40",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "15",
+    "Identificador": "COD598-15",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 16:50 a 19:00",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "16",
+    "Identificador": "COD598-16",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 10:50 a 13:00",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "17",
+    "Identificador": "COD598-17",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 10:50 a 13:00",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "18",
+    "Identificador": "COD598-18",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 10:50 a 13:00",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "19",
+    "Identificador": "COD598-19",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 14:30 a 16:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "20",
+    "Identificador": "COD598-20",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 14:30 a 16:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "21",
+    "Identificador": "COD598-21",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 14:30 a 16:40",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "22",
+    "Identificador": "COD598-22",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Miércoles 16:50 a 19:00",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "23",
+    "Identificador": "COD598-23",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Jueves 8:30 a 10:40",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "24",
+    "Identificador": "COD598-24",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Jueves 8:30 a 10:40",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "25",
+    "Identificador": "COD598-25",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Jueves 14:30 a 16:40",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "26",
+    "Identificador": "COD598-26",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Jueves 14:30 a 16:40",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "27",
+    "Identificador": "COD598-27",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Viernes 8:30 a 10:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "28",
+    "Identificador": "COD598-28",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Viernes 8:30 a 10:40",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "29",
+    "Identificador": "COD598-29",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Viernes 10:50 a 13:00",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "30",
+    "Identificador": "COD598-30",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Viernes 10:50 a 13:00",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD598",
+    "Módulo": "31",
+    "Identificador": "COD598-31",
+    "Nivel": "Inglés Pre-Intermedio",
+    "Horario": "Viernes 10:50 a 13:00",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "1",
+    "Identificador": "COD602-1",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 8:30 a 10:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "2",
+    "Identificador": "COD602-2",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 8:30 a 10:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "3",
+    "Identificador": "COD602-3",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 10:50 a 13:00",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "4",
+    "Identificador": "COD602-4",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 10:50 a 13:00",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "5",
+    "Identificador": "COD602-5",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 14:30 a 16:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "6",
+    "Identificador": "COD602-6",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 16:50 a 19:00",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "7",
+    "Identificador": "COD602-7",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 14:30 a 16:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "8",
+    "Identificador": "COD602-8",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 16:50 a 19:00",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "9",
+    "Identificador": "COD602-9",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Lunes 16:50 a 19:00",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "10",
+    "Identificador": "COD602-10",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 8:30 a 10:40",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "11",
+    "Identificador": "COD602-11",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 10:50 a 13:00",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "12",
+    "Identificador": "COD602-12",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 10:50 a 13:00",
+    "Sala": "Global"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "13",
+    "Identificador": "COD602-13",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 14:30 a 16:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "14",
+    "Identificador": "COD602-14",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 14:30 a 16:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "15",
+    "Identificador": "COD602-15",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Viernes 8:30 a 10:40",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "16",
+    "Identificador": "COD602-16",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 16:50 a 19:00",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "17",
+    "Identificador": "COD602-17",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 16:50 a 19:00",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "18",
+    "Identificador": "COD602-18",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Martes 8:30 a 10:40",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "19",
+    "Identificador": "COD602-19",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 8:30 a 10:40",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "20",
+    "Identificador": "COD602-20",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 8:30 a 10:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "21",
+    "Identificador": "COD602-21",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 10:50 a 13:00",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "22",
+    "Identificador": "COD602-22",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 10:50 a 13:00",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "23",
+    "Identificador": "COD602-23",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 10:50 a 13:00",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "24",
+    "Identificador": "COD602-24",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 14:30 a 16:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "25",
+    "Identificador": "COD602-25",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 14:30 a 16:40",
+    "Sala": "Irish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "26",
+    "Identificador": "COD602-26",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 14:30 a 16:40",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "27",
+    "Identificador": "COD602-27",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Viernes 14:30 a 16:40",
+    "Sala": "Indian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "28",
+    "Identificador": "COD602-28",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Miércoles 16:50 a 19:00",
+    "Sala": "American"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "29",
+    "Identificador": "COD602-29",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Jueves 8:30 a 10:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "30",
+    "Identificador": "COD602-30",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Jueves 8:30 a 10:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "31",
+    "Identificador": "COD602-31",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Jueves 14:30 a 16:40",
+    "Sala": "Australian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "32",
+    "Identificador": "COD602-32",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Jueves 14:30 a 16:40",
+    "Sala": "Canadian"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "33",
+    "Identificador": "COD602-33",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Viernes 8:30 a 10:40",
+    "Sala": "Scottish"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "34",
+    "Identificador": "COD602-34",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Viernes 8:30 a 10:40",
+    "Sala": "New Zealand"
+  },
+  {
+    "Código": "COD602",
+    "Módulo": "35",
+    "Identificador": "COD602-35",
+    "Nivel": "Inglés Intermedio",
+    "Horario": "Viernes 10:50 a 13:00",
+    "Sala": "American"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "cupos-ufro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "download": "node scripts/descargar-reportes.js",
+    "build": "node procesar-oferta-2026-2.js",
+    "drive": "node scripts/subir-drive.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "googleapis": "^160.0.0",
+    "playwright": "^1.55.0"
+  }
+}
