@@ -1,0 +1,85 @@
+name: Actualizar cupos UFRO
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30-59/5 8 * 8,9 1-5'
+      timezone: 'America/Santiago'
+    - cron: '*/5 9-17 * 8,9 1-5'
+      timezone: 'America/Santiago'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cupos-ufro
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.datecheck.outputs.run }}
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Instalar Chromium de Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Verificar fecha
+        id: datecheck
+        run: node scripts/check-date.js
+
+      - name: Descargar reportes desde Intranet UFRO
+        if: steps.datecheck.outputs.run == 'true'
+        env:
+          UFRO_USER: ${{ secrets.UFRO_USER }}
+          UFRO_PASSWORD: ${{ secrets.UFRO_PASSWORD }}
+        run: node scripts/descargar-reportes.js
+
+      - name: Generar sitio
+        if: steps.datecheck.outputs.run == 'true'
+        run: node procesar-oferta-2026-2.js
+
+      - name: Copiar resultado a Google Drive
+        if: steps.datecheck.outputs.run == 'true'
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+        run: node scripts/subir-drive.js
+
+      - name: Configurar GitHub Pages
+        if: steps.datecheck.outputs.run == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto de GitHub Pages
+        if: steps.datecheck.outputs.run == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    if: needs.build.outputs.run == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
