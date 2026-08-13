@@ -20,7 +20,20 @@ table{border-collapse:collapse;width:100%;min-width:1000px}
 th,td{padding:11px 10px;border-bottom:1px solid #e7eaf0;text-align:left;vertical-align:top;font-size:14px}
 th{background:#172033;color:white;position:sticky;top:0}
 td.asig{font-weight:700;min-width:260px}
+
 td.vac{font-size:18px;font-weight:800;text-align:center}
+.sesiones-cell{min-width:290px}
+.sesion{display:grid;grid-template-columns:minmax(105px,auto) minmax(95px,auto) 1fr;gap:7px;align-items:start;padding:4px 0}
+.sesion + .sesion{border-top:1px dashed #d8dde6;margin-top:4px;padding-top:8px}
+.sesion .sep{color:#a0a8b5}
+.sesion-sala{color:#5f6878}
+.card-sesiones{display:grid;gap:8px;margin:10px 0}
+.card-sesion{background:#fff;border:1px solid #e3e7ed;border-radius:10px;padding:10px 12px}
+.card-dia{font-weight:800;color:#172033}
+.card-horario{font-weight:700;margin-top:2px}
+.card-sala{font-size:13px;color:#657083;margin-top:3px}
+.docente{margin-top:10px!important;color:#4f5969}
+
 .warning{background:#fff3cd;border:1px solid #ffe69c;padding:12px;border-radius:10px;margin-bottom:18px}
 .cards{display:none}
 .empty{padding:18px;background:#f8f9fb;border-radius:10px;margin-top:14px}
@@ -62,7 +75,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
 </div>
 <header>
   <h1>Cupos disponibles · Segundo semestre 2026</h1>
-  <p class="meta">Última actualización: 13 de agosto de 2026 a las 5:25 p. m.</p>
+  <p class="meta">Última actualización: 13 de agosto de 2026 a las 5:27 p. m.</p>
   <p class="note">Los cupos pueden variar durante el proceso de inscripción.</p>
 </header>
 
@@ -81,8 +94,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Día</th>
-        <th>Horario</th><th>Sala</th><th>Docente</th><th>Cupos</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Docente</th><th>Cupos</th>
       </tr></thead>
       <tbody>
     <tr>
@@ -92,9 +105,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura 100 % asincrónica que fortalece la ciudadanía global mediante el análisis crítico de temas como derechos humanos, constitucionalismo y participación ciudadana. Promueve el trabajo autónomo y el desarrollo de competencias para abordar problemáticas locales y globales.</div></details>
       </td>
       <td>1</td>
-      <td>Asincrónico</td>
-      <td>Asincrónico</td>
-      <td>Campus Virtual</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Asincrónico</strong><span class="sep">·</span>Asincrónico<span class="sep">·</span><span class="sesion-sala">Campus Virtual</span></div></td>
       <td>María Teresa Zuleta</td>
       <td class="vac">4</td>
     </tr>
@@ -105,9 +116,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el cicloturismo para conocer y valorar el patrimonio natural, social y cultural de La Araucanía. Promueve el uso responsable de la bicicleta, el turismo sostenible y el diseño de propuestas que aporten al territorio y sus comunidades.</div></details>
       </td>
       <td>1</td>
-      <td>Jueves</td>
-      <td>16:50 - 19:00</td>
-      <td>DITFO 104</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>16:50 - 19:00<span class="sep">·</span><span class="sesion-sala">DITFO 104</span></div></td>
       <td>Fabián Rojas</td>
       <td class="vac">1</td>
     </tr>
@@ -118,9 +127,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Se centra en el desarrollo de la competencia intercultural por medio de la revisión del concepto y actividades prácticas, aportando al perfil del Titulado UFRO por medio de la valoración de las diferencias culturales y el respeto a la diversidad.</div></details>
       </td>
       <td>1</td>
-      <td>Jueves</td>
-      <td>18:00 - 20:10</td>
-      <td>DITFO 204</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>18:00 - 20:10<span class="sep">·</span><span class="sesion-sala">DITFO 204</span></div></td>
       <td>Francisco Venegas</td>
       <td class="vac">1</td>
     </tr>
@@ -131,9 +138,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura teórico-práctica está orientada al desarrollo personal y al aprendizaje de diversas danzas folklóricas chilenas y latinoamericanas. Se pretende que los alumnos desarrollen aspectos de convivencia, trabajo grupal y trabajo autónomo, como también potenciar sus condiciones rítmico-motrices. Los alumnos conocerán y podrán interpretar danzas de algunos países de América, apoyados por un trabajo teórico que potencie el conocimiento integral de la danza.</div></details>
       </td>
       <td>1</td>
-      <td>Martes</td>
-      <td>8:30 - 11:50</td>
-      <td>Sala Danza Prat</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>8:30 - 11:50<span class="sep">·</span><span class="sesion-sala">Sala Danza Prat</span></div></td>
       <td>Miguel Angel Leiva</td>
       <td class="vac">2</td>
     </tr>
@@ -144,9 +149,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura e-learning que aborda críticamente la diversidad sexo-genérica, los estudios de género, los feminismos y la heteronormatividad. Promueve la inclusión, la equidad, el respeto de los derechos y la comprensión de las brechas que afectan a las diversidades.</div></details>
       </td>
       <td>1</td>
-      <td>Miércoles</td>
-      <td>18:00 - 20:10</td>
-      <td>Zoom</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>18:00 - 20:10<span class="sep">·</span><span class="sesion-sala">Zoom</span></div></td>
       <td>Felipe Muñoz</td>
       <td class="vac">3</td>
     </tr>
@@ -157,9 +160,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el dibujo de observación en terreno o urban sketching para registrar y valorar las experiencias en el territorio. Desarrolla habilidades de representación espacial y promueve la apreciación del patrimonio cultural, la arquitectura y la vida cotidiana.</div></details>
       </td>
       <td>2</td>
-      <td>Martes</td>
-      <td>8:30 - 10:40</td>
-      <td>DITFO 104</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>8:30 - 10:40<span class="sep">·</span><span class="sesion-sala">DITFO 104</span></div></td>
       <td>Diego Segura</td>
       <td class="vac">6</td>
     </tr>
@@ -170,9 +171,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura destinada a generar capacidades de comprensión de los fenómenos de diversidad sociocultural, con énfasis en la diversidad de género, y su vinculación con la comunicación social. Su propósito específico se orienta a desarrollar capacidades de interpretación de los fenómenos comunicacionales propios de una sociedad pluralista, entregando técnicas, teoría y estrategias para su abordaje desde una perspectiva valórica, crítica y socialmente responsable.</div></details>
       </td>
       <td>1</td>
-      <td>Martes</td>
-      <td>8:30 - 10:40</td>
-      <td>Sala Seminario Biblioteca</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>8:30 - 10:40<span class="sep">·</span><span class="sesion-sala">Sala Seminario Biblioteca</span></div></td>
       <td>Gonzalo Berrueta</td>
       <td class="vac">6</td>
     </tr>
@@ -183,9 +182,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura interdisciplinaria orientada al estudio del manga japonés, su evolución histórica, autores y principales características. Promueve la apreciación estética, la reflexión sociocultural, el pensamiento crítico y el respeto por la diversidad cultural.</div></details>
       </td>
       <td>1</td>
-      <td>Jueves</td>
-      <td>14:30 - 16:40</td>
-      <td>DITFO 104</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">DITFO 104</span></div></td>
       <td>Fabian Leal</td>
       <td class="vac">1</td>
     </tr>
@@ -196,9 +193,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Ha sido diseñada para que los estudiantes desarrollen herramientas de vanguardia para la creación de Startup y la comunicación efectiva de Ideas de Negocios, así como competencias avanzadas en el ámbito profesional empresarial.</div></details>
       </td>
       <td>1</td>
-      <td>Martes</td>
-      <td>14:30 - 16:40</td>
-      <td>DITFO 204</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">DITFO 204</span></div></td>
       <td>Oscar Alvarado</td>
       <td class="vac">6</td>
     </tr>
@@ -209,9 +204,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
       </td>
       <td>1</td>
-      <td>Martes / Miércoles</td>
-      <td>14:30 - 16:40 / 16:50 - 17:50</td>
-      <td>Sala Multipropósito G.O</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">Sala Multipropósito G.O</span></div><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>16:50 - 17:50<span class="sep">·</span><span class="sesion-sala">Sala Multipropósito G.O</span></div></td>
       <td>Nicole Troncoso</td>
       <td class="vac">7</td>
     </tr>
@@ -222,9 +215,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
       </td>
       <td>2</td>
-      <td>Miércoles / Jueves</td>
-      <td>14:30 - 16:40 / 16:50 - 17:50</td>
-      <td>Sala Multipropósito G.O</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">Sala Multipropósito G.O</span></div><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>16:50 - 17:50<span class="sep">·</span><span class="sesion-sala">Sala Multipropósito G.O</span></div></td>
       <td>Nicole Troncoso</td>
       <td class="vac">7</td>
     </tr>
@@ -235,9 +226,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
       </td>
       <td>3</td>
-      <td>Lunes / Jueves</td>
-      <td>16:50 - 17:50 / 14:30 - 16:40</td>
-      <td>Sala Multipropósito G.O</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>16:50 - 17:50<span class="sep">·</span><span class="sesion-sala">Sala Multipropósito G.O</span></div><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">Sala Multipropósito G.O</span></div></td>
       <td>Nicole Troncoso</td>
       <td class="vac">4</td>
     </tr>
@@ -248,9 +237,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura se enfoca en el fútbol femenino, promoviendo tanto la comprensión de los aspectos básicos del deporte como hábitos de vida saludable. Los objetivos incluyen fomentar la participación en el fútbol femenino, comprender sus fundamentos, desarrollar habilidades deportivas y promover el bienestar físico y emocional. La enseñanza combina teoría y práctica, con evaluaciones basadas en el desempeño y el conocimiento teórico del futbol femenino. Esta asignatura proporciona una oportunidad única para disfrutar y aprender sobre el fútbol femenino, al tiempo que se aboga por un estilo de vida activo y saludable.</div></details>
       </td>
       <td>1</td>
-      <td>Martes y jueves / Viernes</td>
-      <td>12:00 - 13:00 / 8:30 - 9:30</td>
-      <td>Cancha Fútbol 2</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes y jueves</strong><span class="sep">·</span>12:00 - 13:00<span class="sep">·</span><span class="sesion-sala">Cancha Fútbol 2</span></div><div class="sesion"><strong>Viernes</strong><span class="sep">·</span>8:30 - 9:30<span class="sep">·</span><span class="sesion-sala">Cancha Fútbol 2</span></div></td>
       <td>Ignacio Álvarez</td>
       <td class="vac">8</td>
     </tr>
@@ -261,9 +248,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura aporta al desarrollo de la competencia del pensamiento crítico a través del abordaje de las problemáticas de género. Bajo una mirada interseccional, se pretende aportar a discusiones que implican procesos interculturales de entendimiento. En el transcurso de la asignatura los y las estudiantes conocerán los conceptos y teorías relacionados con la interculturalidad y estudios de género, para luego aplicarlos en el análisis de casos y en la reflexión crítica de situaciones interculturales.</div></details>
       </td>
       <td>1</td>
-      <td>Jueves</td>
-      <td>16:50 - 20:10</td>
-      <td>DITFO 106</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>16:50 - 20:10<span class="sep">·</span><span class="sesion-sala">DITFO 106</span></div></td>
       <td>Stefanie Pacheco</td>
       <td class="vac">3</td>
     </tr>
@@ -274,9 +259,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene como objetivo reconocer los distintos tipos de acordes en la guitarra, sus posibilidades de acompañamiento y lógica de estructuración; además, las y los estudiantes podrán interpretar secuencias de acordes de música popular.</div></details>
       </td>
       <td>1</td>
-      <td>Miércoles</td>
-      <td>19:10 - 21:20</td>
-      <td>DITFO 104</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>19:10 - 21:20<span class="sep">·</span><span class="sesion-sala">DITFO 104</span></div></td>
       <td>Marcos Vera</td>
       <td class="vac">1</td>
     </tr>
@@ -287,9 +270,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que analiza críticamente la identidad mapuche contemporánea en entornos presenciales y digitales. Aborda la construcción de comunidades, las representaciones culturales y los conflictos interculturales en plataformas digitales, promoviendo una comprensión reflexiva de la relación entre identidad, cultura y tecnología.</div></details>
       </td>
       <td>1</td>
-      <td>Miércoles</td>
-      <td>10:50 - 13:00</td>
-      <td>Auditorio DITFO</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>10:50 - 13:00<span class="sep">·</span><span class="sesion-sala">Auditorio DITFO</span></div></td>
       <td>Karina Polanco</td>
       <td class="vac">8</td>
     </tr>
@@ -300,9 +281,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica. Instruye práctica de técnicas corporales y dinámicas de grupo, acondicionamiento físico e instrucción de coreografías de danza. Mediante trabajo en equipo en técnicas de improvisación y coreografías instruidas, el alumno desarrolla la disciplina de trabajo corporal y apreciación estética de la danza.</div></details>
       </td>
       <td>1</td>
-      <td>Miércoles</td>
-      <td>9:40 - 13:00</td>
-      <td>Sala Danza Prat</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>9:40 - 13:00<span class="sep">·</span><span class="sesion-sala">Sala Danza Prat</span></div></td>
       <td>María Elena Maire</td>
       <td class="vac">2</td>
     </tr>
@@ -313,9 +292,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>El propósito de la asignatura es trabajar nociones básicas de la lengua y cultura mapuche, junto con fortalecer el espíritu crítico del estudiante, observando las características culturales del pueblo mapuche, a través de una metodología orientada al aprendizaje del mapudungun mediante el desarrollo de ejercicios prácticos tanto orales como escritos.</div></details>
       </td>
       <td>2</td>
-      <td>Miércoles</td>
-      <td>14:30 - 17:50</td>
-      <td>Sala Seminario Biblioteca</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>14:30 - 17:50<span class="sep">·</span><span class="sesion-sala">Sala Seminario Biblioteca</span></div></td>
       <td>Héctor Painequeo</td>
       <td class="vac">2</td>
     </tr>
@@ -326,9 +303,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura presencial que utiliza la historieta como herramienta para reflexionar sobre las distintas etapas de la vida, resignificar experiencias y proyectar posibilidades de cambio y crecimiento. Fortalece la comunicación gráfica y narrativa de vivencias personales de manera clara, ordenada y contextualizada.</div></details>
       </td>
       <td>2</td>
-      <td>Lunes</td>
-      <td>10:50 - 13:00</td>
-      <td>DITFO 104</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>10:50 - 13:00<span class="sep">·</span><span class="sesion-sala">DITFO 104</span></div></td>
       <td>Diego Segura</td>
       <td class="vac">1</td>
     </tr>
@@ -339,9 +314,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que revisa los principales hitos de los movimientos de mujeres y la lucha por sus derechos en la historia de Chile. Promueve el análisis crítico de las problemáticas de género y fortalece la comunicación oral y escrita.</div></details>
       </td>
       <td>1</td>
-      <td>Martes</td>
-      <td>18:00 - 20:10</td>
-      <td>DITFO 101</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>18:00 - 20:10<span class="sep">·</span><span class="sesion-sala">DITFO 101</span></div></td>
       <td>Camila Rojas</td>
       <td class="vac">1</td>
     </tr>
@@ -352,9 +325,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que fortalece la comunicación oral para expresar ideas con claridad, seguridad y conexión con la audiencia. Mediante ejercicios de oratoria y pedagogía teatral, desarrolla el manejo de la voz, el cuerpo, el espacio y los recursos visuales.</div></details>
       </td>
       <td>7</td>
-      <td>Jueves</td>
-      <td>14:30 - 16:40</td>
-      <td>DITFO 204</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">DITFO 204</span></div></td>
       <td>Javiera Ibaceta</td>
       <td class="vac">1</td>
     </tr>
@@ -365,9 +336,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica orientada al desarrollo de conocimientos y habilidades de primeros auxilios para actuar de manera segura y oportuna ante emergencias. Promueve la calma, la protección de las personas involucradas y la adecuada colaboración con los equipos de emergencia.</div></details>
       </td>
       <td>1</td>
-      <td>Viernes</td>
-      <td>16:50 - 19:00</td>
-      <td>SA 502 (Fac. Medicina)</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Viernes</strong><span class="sep">·</span>16:50 - 19:00<span class="sep">·</span><span class="sesion-sala">SA 502 (Fac. Medicina)</span></div></td>
       <td>Pablo Cantú</td>
       <td class="vac">1</td>
     </tr>
@@ -378,9 +347,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el bordado para conocer y reflexionar sobre el rol social, político y cultural de las mujeres a lo largo de la historia. Promueve la perspectiva de género, la autonomía, el trabajo colaborativo y la valoración del bordado como medio artístico y de expresión.</div></details>
       </td>
       <td>1</td>
-      <td>Martes</td>
-      <td>8.30 - 10:40</td>
-      <td>DITFO 204</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>8.30 - 10:40<span class="sep">·</span><span class="sesion-sala">DITFO 204</span></div></td>
       <td>Paulina Meneses</td>
       <td class="vac">6</td>
     </tr>
@@ -391,9 +358,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura presencial que promueve la conciencia ecológica y el análisis crítico de las problemáticas ambientales contemporáneas. Fortalece la ética y la responsabilidad socioambiental, orientadas a la construcción de sociedades sustentables, justas e inclusivas.</div></details>
       </td>
       <td>1</td>
-      <td>Miércoles</td>
-      <td>10:50 - 13:00</td>
-      <td>Sala Seminario Biblioteca</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Miércoles</strong><span class="sep">·</span>10:50 - 13:00<span class="sep">·</span><span class="sesion-sala">Sala Seminario Biblioteca</span></div></td>
       <td>Viviana Díaz</td>
       <td class="vac">1</td>
     </tr>
@@ -404,9 +369,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Permitirá a los estudiantes conocer aspectos histórico contextuales respecto de cómo se ha construido la relación entre la sociedad mapuche y la sociedad chilena que llegó a Wallmapu con los procesos de colonización e integración al estado nación chileno.</div></details>
       </td>
       <td>1</td>
-      <td>Martes</td>
-      <td>14:30 - 16:40</td>
-      <td>Sala Instituto de Estudios Indígenas</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">Sala Instituto de Estudios Indígenas</span></div></td>
       <td>Miguel Melin</td>
       <td class="vac">9</td>
     </tr>
@@ -417,9 +380,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que aborda la salud pública desde una perspectiva intercultural, con énfasis en la relación entre el Estado chileno y el pueblo mapuche. Integra conocimientos de salud colectiva, antropología médica, epidemiología y gestión sanitaria para comprender los procesos de salud y enfermedad en contextos de diversidad cultural.</div></details>
       </td>
       <td>1</td>
-      <td>Lunes</td>
-      <td>8.30 - 11:50</td>
-      <td>SA 111 (Fac. Medicina)</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>8.30 - 11:50<span class="sep">·</span><span class="sesion-sala">SA 111 (Fac. Medicina)</span></div></td>
       <td>Ricardo Cuyul</td>
       <td class="vac">19</td>
     </tr>
@@ -430,9 +391,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
       </td>
       <td>1</td>
-      <td>Lunes / Martes y miércoles</td>
-      <td>12:00 - 13:00 / 8:30 - 9:30</td>
-      <td>Piscina</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>12:00 - 13:00<span class="sep">·</span><span class="sesion-sala">Piscina</span></div><div class="sesion"><strong>Martes y miércoles</strong><span class="sep">·</span>8:30 - 9:30<span class="sep">·</span><span class="sesion-sala">Piscina</span></div></td>
       <td>Claudio Muñoz</td>
       <td class="vac">9</td>
     </tr>
@@ -443,9 +402,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
       </td>
       <td>3</td>
-      <td>Lunes / Martes y miércoles</td>
-      <td>10:50 - 11:50 / 9:40 - 10:40</td>
-      <td>Piscina</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>10:50 - 11:50<span class="sep">·</span><span class="sesion-sala">Piscina</span></div><div class="sesion"><strong>Martes y miércoles</strong><span class="sep">·</span>9:40 - 10:40<span class="sep">·</span><span class="sesion-sala">Piscina</span></div></td>
       <td>Claudio Muñoz</td>
       <td class="vac">4</td>
     </tr>
@@ -456,9 +413,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura invita a los estudiantes a realizar una exploración activa de símbolos tradicionales y modernos que llegan a nosotros a través de distintos medios y de los cuales no siempre conocemos su origen ni su historia. La asignatura entrega nociones teóricas básicas para desarrollar y fortalecer una actitud de búsqueda activa de información basada en las coordenadas culturales e históricas que permiten una adecuada interpretación de los símbolos. De esta manera pretende aportar a la formación del espíritu crítico y de las herramientas de información que ponen a nuestra disposición el acervo cultural necesario para la interpretación.</div></details>
       </td>
       <td>1</td>
-      <td>Lunes</td>
-      <td>10:50 - 13:00</td>
-      <td>Sala Seminario Biblioteca</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>10:50 - 13:00<span class="sep">·</span><span class="sesion-sala">Sala Seminario Biblioteca</span></div></td>
       <td>Jorge Araya</td>
       <td class="vac">1</td>
     </tr>
@@ -469,9 +424,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>El presente electivo posee un carácter teórico-práctico y tiene como objetivo reconocer los distintos tipos de acordes en el ukelele, sus posibilidades de acompañamiento y lógica de estructuración. Las y los estudiantes podrán interpretar secuencias de acordes de música popular y fortalecer el trabajo en equipo.</div></details>
       </td>
       <td>1</td>
-      <td>Lunes</td>
-      <td>19:10 - 21:20</td>
-      <td>DITFO 104</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Lunes</strong><span class="sep">·</span>19:10 - 21:20<span class="sep">·</span><span class="sesion-sala">DITFO 104</span></div></td>
       <td>Marcos Vera</td>
       <td class="vac">1</td>
     </tr>
@@ -482,9 +435,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica centrada en el voleibol femenino, sus fundamentos y el desarrollo de habilidades deportivas. Promueve la participación, el bienestar físico y emocional, y la adopción de un estilo de vida activo y saludable.</div></details>
       </td>
       <td>2</td>
-      <td>Martes / Jueves</td>
-      <td>16:50 - 17:50 / 14:30 - 16:40</td>
-      <td>Cancha 1, Gimnasio Olímpico</td>
+      <td class="sesiones-cell"><div class="sesion"><strong>Martes</strong><span class="sep">·</span>16:50 - 17:50<span class="sep">·</span><span class="sesion-sala">Cancha 1, Gimnasio Olímpico</span></div><div class="sesion"><strong>Jueves</strong><span class="sep">·</span>14:30 - 16:40<span class="sep">·</span><span class="sesion-sala">Cancha 1, Gimnasio Olímpico</span></div></td>
       <td>Javiera Parada</td>
       <td class="vac">7</td>
     </tr></tbody>
@@ -497,9 +448,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>4 cupos</strong>
       </div>
       <h3>BASES PARA EL DESARROLLO DE UNA CIUDADANÍA GLOBAL (Exclusivo carreras Pilares)</h3>
-      <p><b>Asincrónico</b></p>
-      <p>Campus Virtual</p>
-      <p>María Teresa Zuleta</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Asincrónico</div>
+            <div class="card-horario">Asincrónico</div>
+            <div class="card-sala">Campus Virtual</div>
+          </div>
+        
+      </div>
+      <p class="docente">María Teresa Zuleta</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura 100 % asincrónica que fortalece la ciudadanía global mediante el análisis crítico de temas como derechos humanos, constitucionalismo y participación ciudadana. Promueve el trabajo autónomo y el desarrollo de competencias para abordar problemáticas locales y globales.</div></details>
     </article>
     <article class="card">
@@ -508,9 +466,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>CICLOTURISMO CONSCIENTE</h3>
-      <p><b>16:50 - 19:00</b></p>
-      <p>DITFO 104</p>
-      <p>Fabián Rojas</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">16:50 - 19:00</div>
+            <div class="card-sala">DITFO 104</div>
+          </div>
+        
+      </div>
+      <p class="docente">Fabián Rojas</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el cicloturismo para conocer y valorar el patrimonio natural, social y cultural de La Araucanía. Promueve el uso responsable de la bicicleta, el turismo sostenible y el diseño de propuestas que aporten al territorio y sus comunidades.</div></details>
     </article>
     <article class="card">
@@ -519,9 +484,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>CIUDADANÍA Y RELACIONES INTERCULTURALES</h3>
-      <p><b>18:00 - 20:10</b></p>
-      <p>DITFO 204</p>
-      <p>Francisco Venegas</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">18:00 - 20:10</div>
+            <div class="card-sala">DITFO 204</div>
+          </div>
+        
+      </div>
+      <p class="docente">Francisco Venegas</p>
       <details class="desc"><summary>Ver descripción</summary><div>Se centra en el desarrollo de la competencia intercultural por medio de la revisión del concepto y actividades prácticas, aportando al perfil del Titulado UFRO por medio de la valoración de las diferencias culturales y el respeto a la diversidad.</div></details>
     </article>
     <article class="card">
@@ -530,9 +502,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>2 cupos</strong>
       </div>
       <h3>DANZAS FOLKLÓRICAS Y LATINOAMERICANAS</h3>
-      <p><b>8:30 - 11:50</b></p>
-      <p>Sala Danza Prat</p>
-      <p>Miguel Angel Leiva</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">8:30 - 11:50</div>
+            <div class="card-sala">Sala Danza Prat</div>
+          </div>
+        
+      </div>
+      <p class="docente">Miguel Angel Leiva</p>
       <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura teórico-práctica está orientada al desarrollo personal y al aprendizaje de diversas danzas folklóricas chilenas y latinoamericanas. Se pretende que los alumnos desarrollen aspectos de convivencia, trabajo grupal y trabajo autónomo, como también potenciar sus condiciones rítmico-motrices. Los alumnos conocerán y podrán interpretar danzas de algunos países de América, apoyados por un trabajo teórico que potencie el conocimiento integral de la danza.</div></details>
     </article>
     <article class="card">
@@ -541,9 +520,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>3 cupos</strong>
       </div>
       <h3>DESARMANDO LA NORMA: DIVERSIDADES Y HETERONORMATIVIDAD</h3>
-      <p><b>18:00 - 20:10</b></p>
-      <p>Zoom</p>
-      <p>Felipe Muñoz</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">18:00 - 20:10</div>
+            <div class="card-sala">Zoom</div>
+          </div>
+        
+      </div>
+      <p class="docente">Felipe Muñoz</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura e-learning que aborda críticamente la diversidad sexo-genérica, los estudios de género, los feminismos y la heteronormatividad. Promueve la inclusión, la equidad, el respeto de los derechos y la comprensión de las brechas que afectan a las diversidades.</div></details>
     </article>
     <article class="card">
@@ -552,9 +538,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>6 cupos</strong>
       </div>
       <h3>DIBUJANDO EL TERRITORIO</h3>
-      <p><b>8:30 - 10:40</b></p>
-      <p>DITFO 104</p>
-      <p>Diego Segura</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">8:30 - 10:40</div>
+            <div class="card-sala">DITFO 104</div>
+          </div>
+        
+      </div>
+      <p class="docente">Diego Segura</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el dibujo de observación en terreno o urban sketching para registrar y valorar las experiencias en el territorio. Desarrolla habilidades de representación espacial y promueve la apreciación del patrimonio cultural, la arquitectura y la vida cotidiana.</div></details>
     </article>
     <article class="card">
@@ -563,9 +556,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>6 cupos</strong>
       </div>
       <h3>DIVERSIDAD SOCIOCULTURAL Y COMUNICACIÓN</h3>
-      <p><b>8:30 - 10:40</b></p>
-      <p>Sala Seminario Biblioteca</p>
-      <p>Gonzalo Berrueta</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">8:30 - 10:40</div>
+            <div class="card-sala">Sala Seminario Biblioteca</div>
+          </div>
+        
+      </div>
+      <p class="docente">Gonzalo Berrueta</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura destinada a generar capacidades de comprensión de los fenómenos de diversidad sociocultural, con énfasis en la diversidad de género, y su vinculación con la comunicación social. Su propósito específico se orienta a desarrollar capacidades de interpretación de los fenómenos comunicacionales propios de una sociedad pluralista, entregando técnicas, teoría y estrategias para su abordaje desde una perspectiva valórica, crítica y socialmente responsable.</div></details>
     </article>
     <article class="card">
@@ -574,9 +574,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>EL MANGA COMO OBJETO DE ESTUDIO: HISTORIA Y PROBLEMÁTICAS</h3>
-      <p><b>14:30 - 16:40</b></p>
-      <p>DITFO 104</p>
-      <p>Fabian Leal</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">DITFO 104</div>
+          </div>
+        
+      </div>
+      <p class="docente">Fabian Leal</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura interdisciplinaria orientada al estudio del manga japonés, su evolución histórica, autores y principales características. Promueve la apreciación estética, la reflexión sociocultural, el pensamiento crítico y el respeto por la diversidad cultural.</div></details>
     </article>
     <article class="card">
@@ -585,9 +592,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>6 cupos</strong>
       </div>
       <h3>EMPRENDIMIENTO START-UP</h3>
-      <p><b>14:30 - 16:40</b></p>
-      <p>DITFO 204</p>
-      <p>Oscar Alvarado</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">DITFO 204</div>
+          </div>
+        
+      </div>
+      <p class="docente">Oscar Alvarado</p>
       <details class="desc"><summary>Ver descripción</summary><div>Ha sido diseñada para que los estudiantes desarrollen herramientas de vanguardia para la creación de Startup y la comunicación efectiva de Ideas de Negocios, así como competencias avanzadas en el ámbito profesional empresarial.</div></details>
     </article>
     <article class="card">
@@ -596,9 +610,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>7 cupos</strong>
       </div>
       <h3>EXPRESIÓN DEL RITMO Y BAILE MODERNO</h3>
-      <p><b>14:30 - 16:40 / 16:50 - 17:50</b></p>
-      <p>Sala Multipropósito G.O</p>
-      <p>Nicole Troncoso</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">Sala Multipropósito G.O</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">16:50 - 17:50</div>
+            <div class="card-sala">Sala Multipropósito G.O</div>
+          </div>
+        
+      </div>
+      <p class="docente">Nicole Troncoso</p>
       <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
     </article>
     <article class="card">
@@ -607,9 +634,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>7 cupos</strong>
       </div>
       <h3>EXPRESIÓN DEL RITMO Y BAILE MODERNO</h3>
-      <p><b>14:30 - 16:40 / 16:50 - 17:50</b></p>
-      <p>Sala Multipropósito G.O</p>
-      <p>Nicole Troncoso</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">Sala Multipropósito G.O</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">16:50 - 17:50</div>
+            <div class="card-sala">Sala Multipropósito G.O</div>
+          </div>
+        
+      </div>
+      <p class="docente">Nicole Troncoso</p>
       <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
     </article>
     <article class="card">
@@ -618,9 +658,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>4 cupos</strong>
       </div>
       <h3>EXPRESIÓN DEL RITMO Y BAILE MODERNO</h3>
-      <p><b>16:50 - 17:50 / 14:30 - 16:40</b></p>
-      <p>Sala Multipropósito G.O</p>
-      <p>Nicole Troncoso</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">16:50 - 17:50</div>
+            <div class="card-sala">Sala Multipropósito G.O</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">Sala Multipropósito G.O</div>
+          </div>
+        
+      </div>
+      <p class="docente">Nicole Troncoso</p>
       <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
     </article>
     <article class="card">
@@ -629,9 +682,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>8 cupos</strong>
       </div>
       <h3>FÚTBOL FEMENINO</h3>
-      <p><b>12:00 - 13:00 / 8:30 - 9:30</b></p>
-      <p>Cancha Fútbol 2</p>
-      <p>Ignacio Álvarez</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes y jueves</div>
+            <div class="card-horario">12:00 - 13:00</div>
+            <div class="card-sala">Cancha Fútbol 2</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Viernes</div>
+            <div class="card-horario">8:30 - 9:30</div>
+            <div class="card-sala">Cancha Fútbol 2</div>
+          </div>
+        
+      </div>
+      <p class="docente">Ignacio Álvarez</p>
       <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura se enfoca en el fútbol femenino, promoviendo tanto la comprensión de los aspectos básicos del deporte como hábitos de vida saludable. Los objetivos incluyen fomentar la participación en el fútbol femenino, comprender sus fundamentos, desarrollar habilidades deportivas y promover el bienestar físico y emocional. La enseñanza combina teoría y práctica, con evaluaciones basadas en el desempeño y el conocimiento teórico del futbol femenino. Esta asignatura proporciona una oportunidad única para disfrutar y aprender sobre el fútbol femenino, al tiempo que se aboga por un estilo de vida activo y saludable.</div></details>
     </article>
     <article class="card">
@@ -640,9 +706,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>3 cupos</strong>
       </div>
       <h3>GÉNERO E INTERCULTURALIDAD</h3>
-      <p><b>16:50 - 20:10</b></p>
-      <p>DITFO 106</p>
-      <p>Stefanie Pacheco</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">16:50 - 20:10</div>
+            <div class="card-sala">DITFO 106</div>
+          </div>
+        
+      </div>
+      <p class="docente">Stefanie Pacheco</p>
       <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura aporta al desarrollo de la competencia del pensamiento crítico a través del abordaje de las problemáticas de género. Bajo una mirada interseccional, se pretende aportar a discusiones que implican procesos interculturales de entendimiento. En el transcurso de la asignatura los y las estudiantes conocerán los conceptos y teorías relacionados con la interculturalidad y estudios de género, para luego aplicarlos en el análisis de casos y en la reflexión crítica de situaciones interculturales.</div></details>
     </article>
     <article class="card">
@@ -651,9 +724,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>GUITARRA POPULAR</h3>
-      <p><b>19:10 - 21:20</b></p>
-      <p>DITFO 104</p>
-      <p>Marcos Vera</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">19:10 - 21:20</div>
+            <div class="card-sala">DITFO 104</div>
+          </div>
+        
+      </div>
+      <p class="docente">Marcos Vera</p>
       <details class="desc"><summary>Ver descripción</summary><div>Tiene como objetivo reconocer los distintos tipos de acordes en la guitarra, sus posibilidades de acompañamiento y lógica de estructuración; además, las y los estudiantes podrán interpretar secuencias de acordes de música popular.</div></details>
     </article>
     <article class="card">
@@ -662,9 +742,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>8 cupos</strong>
       </div>
       <h3>IDENTIDAD MAPUCHE Y ENTORNOS DIGITALES CONTEMPORÁNEOS</h3>
-      <p><b>10:50 - 13:00</b></p>
-      <p>Auditorio DITFO</p>
-      <p>Karina Polanco</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">10:50 - 13:00</div>
+            <div class="card-sala">Auditorio DITFO</div>
+          </div>
+        
+      </div>
+      <p class="docente">Karina Polanco</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura que analiza críticamente la identidad mapuche contemporánea en entornos presenciales y digitales. Aborda la construcción de comunidades, las representaciones culturales y los conflictos interculturales en plataformas digitales, promoviendo una comprensión reflexiva de la relación entre identidad, cultura y tecnología.</div></details>
     </article>
     <article class="card">
@@ -673,9 +760,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>2 cupos</strong>
       </div>
       <h3>INTRODUCCIÓN A LA DANZA</h3>
-      <p><b>9:40 - 13:00</b></p>
-      <p>Sala Danza Prat</p>
-      <p>María Elena Maire</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">9:40 - 13:00</div>
+            <div class="card-sala">Sala Danza Prat</div>
+          </div>
+        
+      </div>
+      <p class="docente">María Elena Maire</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica. Instruye práctica de técnicas corporales y dinámicas de grupo, acondicionamiento físico e instrucción de coreografías de danza. Mediante trabajo en equipo en técnicas de improvisación y coreografías instruidas, el alumno desarrolla la disciplina de trabajo corporal y apreciación estética de la danza.</div></details>
     </article>
     <article class="card">
@@ -684,9 +778,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>2 cupos</strong>
       </div>
       <h3>LENGUA Y CULTURA MAPUCHE</h3>
-      <p><b>14:30 - 17:50</b></p>
-      <p>Sala Seminario Biblioteca</p>
-      <p>Héctor Painequeo</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">14:30 - 17:50</div>
+            <div class="card-sala">Sala Seminario Biblioteca</div>
+          </div>
+        
+      </div>
+      <p class="docente">Héctor Painequeo</p>
       <details class="desc"><summary>Ver descripción</summary><div>El propósito de la asignatura es trabajar nociones básicas de la lengua y cultura mapuche, junto con fortalecer el espíritu crítico del estudiante, observando las características culturales del pueblo mapuche, a través de una metodología orientada al aprendizaje del mapudungun mediante el desarrollo de ejercicios prácticos tanto orales como escritos.</div></details>
     </article>
     <article class="card">
@@ -695,9 +796,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>MI VIDA EN HISTORIETA</h3>
-      <p><b>10:50 - 13:00</b></p>
-      <p>DITFO 104</p>
-      <p>Diego Segura</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">10:50 - 13:00</div>
+            <div class="card-sala">DITFO 104</div>
+          </div>
+        
+      </div>
+      <p class="docente">Diego Segura</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura presencial que utiliza la historieta como herramienta para reflexionar sobre las distintas etapas de la vida, resignificar experiencias y proyectar posibilidades de cambio y crecimiento. Fortalece la comunicación gráfica y narrativa de vivencias personales de manera clara, ordenada y contextualizada.</div></details>
     </article>
     <article class="card">
@@ -706,9 +814,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>MOVIMIENTOS DE MUJERES EN CHILE: UNA REVISIÓN HISTÓRICA DE LA LUCHA POR SUS DERECHOS</h3>
-      <p><b>18:00 - 20:10</b></p>
-      <p>DITFO 101</p>
-      <p>Camila Rojas</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">18:00 - 20:10</div>
+            <div class="card-sala">DITFO 101</div>
+          </div>
+        
+      </div>
+      <p class="docente">Camila Rojas</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura que revisa los principales hitos de los movimientos de mujeres y la lucha por sus derechos en la historia de Chile. Promueve el análisis crítico de las problemáticas de género y fortalece la comunicación oral y escrita.</div></details>
     </article>
     <article class="card">
@@ -717,9 +832,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>ORATORIA: EXPRESA Y CONECTA</h3>
-      <p><b>14:30 - 16:40</b></p>
-      <p>DITFO 204</p>
-      <p>Javiera Ibaceta</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">DITFO 204</div>
+          </div>
+        
+      </div>
+      <p class="docente">Javiera Ibaceta</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que fortalece la comunicación oral para expresar ideas con claridad, seguridad y conexión con la audiencia. Mediante ejercicios de oratoria y pedagogía teatral, desarrolla el manejo de la voz, el cuerpo, el espacio y los recursos visuales.</div></details>
     </article>
     <article class="card">
@@ -728,9 +850,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>PRIMEROS AUXILIOS PARA ESTUDIANTES DE LA SALUD</h3>
-      <p><b>16:50 - 19:00</b></p>
-      <p>SA 502 (Fac. Medicina)</p>
-      <p>Pablo Cantú</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Viernes</div>
+            <div class="card-horario">16:50 - 19:00</div>
+            <div class="card-sala">SA 502 (Fac. Medicina)</div>
+          </div>
+        
+      </div>
+      <p class="docente">Pablo Cantú</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica orientada al desarrollo de conocimientos y habilidades de primeros auxilios para actuar de manera segura y oportuna ante emergencias. Promueve la calma, la protección de las personas involucradas y la adecuada colaboración con los equipos de emergencia.</div></details>
     </article>
     <article class="card">
@@ -739,9 +868,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>6 cupos</strong>
       </div>
       <h3>PUNTADA CON HILO: TALLER DE BORDADO Y SUS RELATOS FEMENINOS</h3>
-      <p><b>8.30 - 10:40</b></p>
-      <p>DITFO 204</p>
-      <p>Paulina Meneses</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">8.30 - 10:40</div>
+            <div class="card-sala">DITFO 204</div>
+          </div>
+        
+      </div>
+      <p class="docente">Paulina Meneses</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el bordado para conocer y reflexionar sobre el rol social, político y cultural de las mujeres a lo largo de la historia. Promueve la perspectiva de género, la autonomía, el trabajo colaborativo y la valoración del bordado como medio artístico y de expresión.</div></details>
     </article>
     <article class="card">
@@ -750,9 +886,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>RECONÉCTATE CON LA NATURALEZA</h3>
-      <p><b>10:50 - 13:00</b></p>
-      <p>Sala Seminario Biblioteca</p>
-      <p>Viviana Díaz</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Miércoles</div>
+            <div class="card-horario">10:50 - 13:00</div>
+            <div class="card-sala">Sala Seminario Biblioteca</div>
+          </div>
+        
+      </div>
+      <p class="docente">Viviana Díaz</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura presencial que promueve la conciencia ecológica y el análisis crítico de las problemáticas ambientales contemporáneas. Fortalece la ética y la responsabilidad socioambiental, orientadas a la construcción de sociedades sustentables, justas e inclusivas.</div></details>
     </article>
     <article class="card">
@@ -761,9 +904,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>9 cupos</strong>
       </div>
       <h3>RELACIONES CHILENO-MAPUCHE EN EL WALLMAPU</h3>
-      <p><b>14:30 - 16:40</b></p>
-      <p>Sala Instituto de Estudios Indígenas</p>
-      <p>Miguel Melin</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">Sala Instituto de Estudios Indígenas</div>
+          </div>
+        
+      </div>
+      <p class="docente">Miguel Melin</p>
       <details class="desc"><summary>Ver descripción</summary><div>Permitirá a los estudiantes conocer aspectos histórico contextuales respecto de cómo se ha construido la relación entre la sociedad mapuche y la sociedad chilena que llegó a Wallmapu con los procesos de colonización e integración al estado nación chileno.</div></details>
     </article>
     <article class="card">
@@ -772,9 +922,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>19 cupos</strong>
       </div>
       <h3>RELACIONES INTERCULTURALES EN SALUD EN LA ARAUCANÍA</h3>
-      <p><b>8.30 - 11:50</b></p>
-      <p>SA 111 (Fac. Medicina)</p>
-      <p>Ricardo Cuyul</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">8.30 - 11:50</div>
+            <div class="card-sala">SA 111 (Fac. Medicina)</div>
+          </div>
+        
+      </div>
+      <p class="docente">Ricardo Cuyul</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura que aborda la salud pública desde una perspectiva intercultural, con énfasis en la relación entre el Estado chileno y el pueblo mapuche. Integra conocimientos de salud colectiva, antropología médica, epidemiología y gestión sanitaria para comprender los procesos de salud y enfermedad en contextos de diversidad cultural.</div></details>
     </article>
     <article class="card">
@@ -783,9 +940,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>9 cupos</strong>
       </div>
       <h3>SEGURIDAD EN EL MEDIO ACUÁTICO CON LA NATACIÓN</h3>
-      <p><b>12:00 - 13:00 / 8:30 - 9:30</b></p>
-      <p>Piscina</p>
-      <p>Claudio Muñoz</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">12:00 - 13:00</div>
+            <div class="card-sala">Piscina</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes y miércoles</div>
+            <div class="card-horario">8:30 - 9:30</div>
+            <div class="card-sala">Piscina</div>
+          </div>
+        
+      </div>
+      <p class="docente">Claudio Muñoz</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
     </article>
     <article class="card">
@@ -794,9 +964,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>4 cupos</strong>
       </div>
       <h3>SEGURIDAD EN EL MEDIO ACUÁTICO CON LA NATACIÓN</h3>
-      <p><b>10:50 - 11:50 / 9:40 - 10:40</b></p>
-      <p>Piscina</p>
-      <p>Claudio Muñoz</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">10:50 - 11:50</div>
+            <div class="card-sala">Piscina</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes y miércoles</div>
+            <div class="card-horario">9:40 - 10:40</div>
+            <div class="card-sala">Piscina</div>
+          </div>
+        
+      </div>
+      <p class="docente">Claudio Muñoz</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
     </article>
     <article class="card">
@@ -805,9 +988,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>SÍMBOLOS, MITO Y CULTURA EN LA VIDA COTIDIANA</h3>
-      <p><b>10:50 - 13:00</b></p>
-      <p>Sala Seminario Biblioteca</p>
-      <p>Jorge Araya</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">10:50 - 13:00</div>
+            <div class="card-sala">Sala Seminario Biblioteca</div>
+          </div>
+        
+      </div>
+      <p class="docente">Jorge Araya</p>
       <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura invita a los estudiantes a realizar una exploración activa de símbolos tradicionales y modernos que llegan a nosotros a través de distintos medios y de los cuales no siempre conocemos su origen ni su historia. La asignatura entrega nociones teóricas básicas para desarrollar y fortalecer una actitud de búsqueda activa de información basada en las coordenadas culturales e históricas que permiten una adecuada interpretación de los símbolos. De esta manera pretende aportar a la formación del espíritu crítico y de las herramientas de información que ponen a nuestra disposición el acervo cultural necesario para la interpretación.</div></details>
     </article>
     <article class="card">
@@ -816,9 +1006,16 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>UKELELE</h3>
-      <p><b>19:10 - 21:20</b></p>
-      <p>DITFO 104</p>
-      <p>Marcos Vera</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Lunes</div>
+            <div class="card-horario">19:10 - 21:20</div>
+            <div class="card-sala">DITFO 104</div>
+          </div>
+        
+      </div>
+      <p class="docente">Marcos Vera</p>
       <details class="desc"><summary>Ver descripción</summary><div>El presente electivo posee un carácter teórico-práctico y tiene como objetivo reconocer los distintos tipos de acordes en el ukelele, sus posibilidades de acompañamiento y lógica de estructuración. Las y los estudiantes podrán interpretar secuencias de acordes de música popular y fortalecer el trabajo en equipo.</div></details>
     </article>
     <article class="card">
@@ -827,9 +1024,22 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>7 cupos</strong>
       </div>
       <h3>VOLEIBOL DAMAS</h3>
-      <p><b>16:50 - 17:50 / 14:30 - 16:40</b></p>
-      <p>Cancha 1, Gimnasio Olímpico</p>
-      <p>Javiera Parada</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            <div class="card-dia">Martes</div>
+            <div class="card-horario">16:50 - 17:50</div>
+            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia">Jueves</div>
+            <div class="card-horario">14:30 - 16:40</div>
+            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+          </div>
+        
+      </div>
+      <p class="docente">Javiera Parada</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica centrada en el voleibol femenino, sus fundamentos y el desarrollo de habilidades deportivas. Promueve la participación, el bienestar físico y emocional, y la adopción de un estilo de vida activo y saludable.</div></details>
     </article></div>
 </section>
@@ -848,8 +1058,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Día</th>
-        <th>Horario</th><th>Sala</th><th>Cupos</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Cupos</th>
       </tr></thead>
       <tbody>
     <tr>
@@ -859,9 +1069,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>1</td>
-      <td>Lunes</td>
-      <td>Lunes 8:30 a 10:40 y Jueves 8:30 a 9:30</td>
-      <td>Canadian</td>
+      <td class="sesiones-cell"><div class="sesion">Lunes 8:30 a 10:40 y Jueves 8:30 a 9:30<span class="sep">·</span><span class="sesion-sala">Canadian</span></div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -872,9 +1080,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>2</td>
-      <td>Lunes</td>
-      <td>Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00</td>
-      <td>New Zealand / Scottish</td>
+      <td class="sesiones-cell"><div class="sesion">Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00<span class="sep">·</span><span class="sesion-sala">New Zealand / Scottish</span></div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -885,9 +1091,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>4</td>
-      <td>Lunes</td>
-      <td>Lunes 10:50 a 13:00 y Viernes 10:50 a 11:50</td>
-      <td>Global</td>
+      <td class="sesiones-cell"><div class="sesion">Lunes 10:50 a 13:00 y Viernes 10:50 a 11:50<span class="sep">·</span><span class="sesion-sala">Global</span></div></td>
       
       <td class="vac">9</td>
     </tr></tbody>
@@ -899,8 +1103,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>Inglés Principiante</h3>
-      <p><b>Lunes 8:30 a 10:40 y Jueves 8:30 a 9:30</b></p>
-      <p>Canadian</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            
+            <div class="card-horario">Lunes 8:30 a 10:40 y Jueves 8:30 a 9:30</div>
+            <div class="card-sala">Canadian</div>
+          </div>
+        
+      </div>
       
       
     </article>
@@ -910,8 +1121,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>1 cupo</strong>
       </div>
       <h3>Inglés Principiante</h3>
-      <p><b>Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00</b></p>
-      <p>New Zealand / Scottish</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            
+            <div class="card-horario">Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00</div>
+            <div class="card-sala">New Zealand / Scottish</div>
+          </div>
+        
+      </div>
       
       
     </article>
@@ -921,8 +1139,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>9 cupos</strong>
       </div>
       <h3>Inglés Principiante</h3>
-      <p><b>Lunes 10:50 a 13:00 y Viernes 10:50 a 11:50</b></p>
-      <p>Global</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            
+            <div class="card-horario">Lunes 10:50 a 13:00 y Viernes 10:50 a 11:50</div>
+            <div class="card-sala">Global</div>
+          </div>
+        
+      </div>
       
       
     </article></div>
@@ -933,8 +1158,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Día</th>
-        <th>Horario</th><th>Sala</th><th>Cupos</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Cupos</th>
       </tr></thead>
       <tbody>
     <tr>
@@ -944,9 +1169,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>2</td>
-      <td>Lunes</td>
-      <td>Lunes 8:30 a 10:40 y Miércoles 9:40 a 10:40</td>
-      <td>Irish</td>
+      <td class="sesiones-cell"><div class="sesion">Lunes 8:30 a 10:40 y Miércoles 9:40 a 10:40<span class="sep">·</span><span class="sesion-sala">Irish</span></div></td>
       
       <td class="vac">4</td>
     </tr>
@@ -957,9 +1180,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>21</td>
-      <td>Lunes</td>
-      <td>Lunes 8:30 a 10:40 y Miércoles 8:30 a 9:30</td>
-      <td>English</td>
+      <td class="sesiones-cell"><div class="sesion">Lunes 8:30 a 10:40 y Miércoles 8:30 a 9:30<span class="sep">·</span><span class="sesion-sala">English</span></div></td>
       
       <td class="vac">5</td>
     </tr></tbody>
@@ -971,8 +1192,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>4 cupos</strong>
       </div>
       <h3>Inglés Básico</h3>
-      <p><b>Lunes 8:30 a 10:40 y Miércoles 9:40 a 10:40</b></p>
-      <p>Irish</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            
+            <div class="card-horario">Lunes 8:30 a 10:40 y Miércoles 9:40 a 10:40</div>
+            <div class="card-sala">Irish</div>
+          </div>
+        
+      </div>
       
       
     </article>
@@ -982,8 +1210,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <strong>5 cupos</strong>
       </div>
       <h3>Inglés Básico</h3>
-      <p><b>Lunes 8:30 a 10:40 y Miércoles 8:30 a 9:30</b></p>
-      <p>English</p>
+      <div class="card-sesiones">
+        
+          <div class="card-sesion">
+            
+            <div class="card-horario">Lunes 8:30 a 10:40 y Miércoles 8:30 a 9:30</div>
+            <div class="card-sala">English</div>
+          </div>
+        
+      </div>
       
       
     </article></div>
