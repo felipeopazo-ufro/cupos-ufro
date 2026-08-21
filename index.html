@@ -22,9 +22,10 @@ th{background:#172033;color:white;position:sticky;top:0}
 td.asig{font-weight:700;min-width:260px}
 
 td.vac{font-size:18px;font-weight:800;text-align:center}
-.sesiones-cell{min-width:360px}
-.sesion{display:grid;grid-template-columns:minmax(120px,1fr) minmax(115px,auto) minmax(120px,1fr);gap:14px;align-items:start;padding:5px 0}
-.sesion + .sesion{border-top:1px dashed #d8dde6;margin-top:5px;padding-top:9px}
+.sesion-col{min-width:130px}
+.sala-col{min-width:150px}
+.sesion-line{min-height:31px;display:flex;align-items:center;padding:5px 0}
+.sesion-line + .sesion-line{border-top:1px dashed #d8dde6}
 .sesion-dia{font-weight:800;color:#172033}
 .sesion-horario{font-weight:700;white-space:nowrap;color:#172033}
 .sesion-sala{color:#5f6878}
@@ -34,6 +35,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
 .card-horario{font-weight:800;margin-top:3px;color:#172033}
 .card-sala{font-size:13px;color:#657083;margin-top:3px}
 .docente{margin-top:10px!important;color:#4f5969}
+.campo-label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#7a8494;font-weight:700;margin-bottom:2px}
 
 .warning{display:none!important;background:#fff3cd;border:1px solid #ffe69c;padding:12px;border-radius:10px;margin-bottom:18px}
 .cards{display:none}
@@ -76,7 +78,7 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
 </div>
 <header>
   <h1>Cupos disponibles · Segundo semestre 2026</h1>
-  <p class="meta">Última actualización: 21 de agosto de 2026 a las 10:15 a. m.</p>
+  <p class="meta">Última actualización: 21 de agosto de 2026 a las 10:18 a. m.</p>
   <p class="note">Los cupos pueden variar durante el proceso de inscripción.</p>
 </header>
 
@@ -95,7 +97,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th>
+        <th>Día</th><th>Horario</th><th>Sala</th>
         <th>Docente</th><th>Cupos</th>
       </tr></thead>
       <tbody>
@@ -106,19 +109,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura se enfoca en el Basquetbol femenino, promoviendo tanto la comprensión de los aspectos básicos del deporte como hábitos de vida saludable. Los objetivos incluyen fomentar la participación en el basquetbol femenino, comprender sus fundamentos, desarrollar habilidades deportivas y promover el bienestar físico y emocional. La enseñanza combina teoría y práctica, con evaluaciones basadas en el desempeño y el conocimiento teórico practico del basquetbol. Esta asignatura proporciona una oportunidad única para disfrutar y aprender sobre el basquetbol, al tiempo que se aboga por un estilo de vida activo y saludable.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">14:30 - 15:30</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div><div class="sesion-line sesion-horario">14:30 - 15:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div></td>
       <td>Fabian Higuera</td>
       <td class="vac">4</td>
     </tr>
@@ -129,13 +122,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Se centra en el desarrollo de las habilidades lingüísticas del Idioma Chino Mandarín: comprensión lectora y auditiva, expresión oral y escrita a nivel Principiante como un desafío al cambio social y cultural de los estudiantes.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">8:30 - 10:40</div>
-      <div class="sesion-sala">DITFO 101</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 101</div></td>
       <td>Xiang Chung (Catalina Xiang)</td>
       <td class="vac">1</td>
     </tr>
@@ -146,13 +135,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Se centra en el desarrollo de la competencia intercultural por medio de la revisión del concepto y actividades prácticas, aportando al perfil del Titulado UFRO por medio de la valoración de las diferencias culturales y el respeto a la diversidad.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">18:00 - 20:10</div>
-      <div class="sesion-sala">DITFO 204</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">18:00 - 20:10</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 204</div></td>
       <td>Francisco Venegas</td>
       <td class="vac">1</td>
     </tr>
@@ -163,19 +148,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>La asignatura Ciudadanías universitarias: ciencias y culturas en el siglo XXI introduce a los estudiantes en una visión global de la evolución de la sociedad, la cultura y la ciencia para enriquecer su formación e identidad universitaria, enfatizando un acercamiento a los saberes disciplinarios del conjunto de Facultades y el desarrollo de una investigación sobre la historia de sus carreras.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">12:00 - 13:00</div>
-      <div class="sesion-sala">D-102</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">10:50 - 13:00</div>
-      <div class="sesion-sala">D-105</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">12:00 - 13:00</div><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">D-102</div><div class="sesion-line sesion-sala">D-105</div></td>
       <td>Luis Iván Inostroza</td>
       <td class="vac">1</td>
     </tr>
@@ -186,13 +161,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que utiliza el dibujo de observación en terreno o urban sketching para registrar y valorar las experiencias en el territorio. Desarrolla habilidades de representación espacial y promueve la apreciación del patrimonio cultural, la arquitectura y la vida cotidiana.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">DITFO 203</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 203</div></td>
       <td>Diego Segura</td>
       <td class="vac">2</td>
     </tr>
@@ -203,14 +174,10 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura destinada a generar capacidades de comprensión de los fenómenos de diversidad sociocultural, con énfasis en la diversidad de género, y su vinculación con la comunicación social. Su propósito específico se orienta a desarrollar capacidades de interpretación de los fenómenos comunicacionales propios de una sociedad pluralista, entregando técnicas, teoría y estrategias para su abordaje desde una perspectiva valórica, crítica y socialmente responsable.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">8:30 - 10:40</div>
-      <div class="sesion-sala">Sala Seminario Biblioteca</div>
-    </div>
-  </td>
-      <td>Gonzalo Berrueta</td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Seminario Biblioteca</div></td>
+      <td>Paloma Carvajal</td>
       <td class="vac">4</td>
     </tr>
     <tr>
@@ -220,13 +187,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica que aborda los derechos humanos como fundamento de la dignidad y la convivencia democrática. Mediante casos reales y dilemas éticos, promueve el análisis crítico de desafíos locales y globales, la autonomía y la responsabilidad social.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">18:00 - 20:10</div>
-      <div class="sesion-sala">DITFO 204</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">18:00 - 20:10</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 204</div></td>
       <td>Natividad Novoa</td>
       <td class="vac">1</td>
     </tr>
@@ -237,19 +200,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Sala Multipropósito G.O</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">16:50 - 17:50</div>
-      <div class="sesion-sala">Sala Multipropósito G.O</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div><div class="sesion-line sesion-horario">16:50 - 17:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Multipropósito G.O</div><div class="sesion-line sesion-sala">Sala Multipropósito G.O</div></td>
       <td>Nicole Troncoso</td>
       <td class="vac">12</td>
     </tr>
@@ -260,19 +213,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
       </td>
       <td>2</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Sala Multipropósito G.O</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">16:50 - 17:50</div>
-      <div class="sesion-sala">Sala Multipropósito G.O</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div><div class="sesion-line sesion-horario">16:50 - 17:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Multipropósito G.O</div><div class="sesion-line sesion-sala">Sala Multipropósito G.O</div></td>
       <td>Nicole Troncoso</td>
       <td class="vac">20</td>
     </tr>
@@ -283,19 +226,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Tiene por propósito relacionar a los alumnos con el conocimiento de su cuerpo y de su entorno, incorporando el poder desarrollar capacidades de expresión y comunicación a través del ritmo, el movimiento, la danza y la música.</div></details>
       </td>
       <td>3</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">16:50 - 17:50</div>
-      <div class="sesion-sala">Sala Multipropósito G.O</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Sala Multipropósito G.O</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">16:50 - 17:50</div><div class="sesion-line sesion-horario">14:30 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Multipropósito G.O</div><div class="sesion-line sesion-sala">Sala Multipropósito G.O</div></td>
       <td>Nicole Troncoso</td>
       <td class="vac">24</td>
     </tr>
@@ -306,19 +239,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura se enfoca en el fútbol femenino, promoviendo tanto la comprensión de los aspectos básicos del deporte como hábitos de vida saludable. Los objetivos incluyen fomentar la participación en el fútbol femenino, comprender sus fundamentos, desarrollar habilidades deportivas y promover el bienestar físico y emocional. La enseñanza combina teoría y práctica, con evaluaciones basadas en el desempeño y el conocimiento teórico del futbol femenino. Esta asignatura proporciona una oportunidad única para disfrutar y aprender sobre el fútbol femenino, al tiempo que se aboga por un estilo de vida activo y saludable.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes y jueves</div>
-      <div class="sesion-horario">12:00 - 13:00</div>
-      <div class="sesion-sala">Cancha Fútbol 2</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Viernes</div>
-      <div class="sesion-horario">8:30 - 9:30</div>
-      <div class="sesion-sala">Cancha Fútbol 2</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes y jueves</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">12:00 - 13:00</div><div class="sesion-line sesion-horario">8:30 - 9:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Cancha Fútbol 2</div><div class="sesion-line sesion-sala">Cancha Fútbol 2</div></td>
       <td>Ignacio Álvarez</td>
       <td class="vac">10</td>
     </tr>
@@ -329,19 +252,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica que promueve la actividad física, el uso saludable del tiempo libre y el bienestar físico y psicológico. Fomenta hábitos de cuidado y autocuidado, junto con la valoración y el respeto por el cuerpo humano.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">10:50 - 13:00</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">12:00 - 13:00</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Martes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div><div class="sesion-line sesion-horario">8:30 - 9:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div></td>
       <td>Ricardo Molina</td>
       <td class="vac">7</td>
     </tr>
@@ -352,13 +265,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>La asignatura se centra en una experiencia teórico-práctica que favorezca que los estudiantes puedan reflexionar sobre la integralidad y potencialidad que tienen las experiencias de huertas a nivel familiar y comunitario; además de desarrollar recursos personales y herramientas que amplíen y enriquezcan su desempeño profesional y personal.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">14:30 - 17:50</div>
-      <div class="sesion-sala">Calle Carrera 228</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 17:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Calle Carrera 228</div></td>
       <td>Rebeca Correa</td>
       <td class="vac">2</td>
     </tr>
@@ -369,13 +278,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que analiza críticamente la identidad mapuche contemporánea en entornos presenciales y digitales. Aborda la construcción de comunidades, las representaciones culturales y los conflictos interculturales en plataformas digitales, promoviendo una comprensión reflexiva de la relación entre identidad, cultura y tecnología.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">10:50 - 13:00</div>
-      <div class="sesion-sala">Auditorio DITFO</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Auditorio DITFO</div></td>
       <td>Karina Polanco</td>
       <td class="vac">9</td>
     </tr>
@@ -386,13 +291,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Este curso invita a explorar los cruces entre religión, ciencia y razón desde una mirada crítica e intercultural. A través de la hermenéutica y la antropología simbólica, reflexiona sobre el impacto de la cultura occidental y los desafíos de comprender las tradiciones en un mundo global, diverso y en constante transformación.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">8:30 - 10:40</div>
-      <div class="sesion-sala">Sala Seminario Biblioteca</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Seminario Biblioteca</div></td>
       <td>Jorge Araya</td>
       <td class="vac">1</td>
     </tr>
@@ -403,13 +304,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica. Instruye práctica de técnicas corporales y dinámicas de grupo, acondicionamiento físico e instrucción de coreografías de danza. Mediante trabajo en equipo en técnicas de improvisación y coreografías instruidas, el alumno desarrolla la disciplina de trabajo corporal y apreciación estética de la danza.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">9:40 - 13:00</div>
-      <div class="sesion-sala">Sala Danza Prat</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">9:40 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Danza Prat</div></td>
       <td>María Elena Maire</td>
       <td class="vac">2</td>
     </tr>
@@ -420,13 +317,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que busca dar a conocer, de manera introductoria, el fenómeno teatral desde dentro, permitiendo a los alumnos vivenciar el proceso entrenamiento-creación-puesta en escena y representación de una obra teatral creada colectivamente o de autor. Su propósito es proporcionar experiencias significativas en torno al teatro que apoyen su proceso de formación profesional y humana.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Viernes</div>
-      <div class="sesion-horario">8:30 - 11:50</div>
-      <div class="sesion-sala">Sala de Teatro Los Avellanos</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 11:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala de Teatro Los Avellanos</div></td>
       <td>Óscar Salinas</td>
       <td class="vac">1</td>
     </tr>
@@ -437,13 +330,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>El propósito de la asignatura es trabajar nociones básicas de la lengua y cultura mapuche, junto con fortalecer el espíritu crítico del estudiante, observando las características culturales del pueblo mapuche, a través de una metodología orientada al aprendizaje del mapudungun mediante el desarrollo de ejercicios prácticos tanto orales como escritos.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">14:30 - 17:50</div>
-      <div class="sesion-sala">Sala Seminario Biblioteca</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 17:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Seminario Biblioteca</div></td>
       <td>Héctor Painequeo</td>
       <td class="vac">2</td>
     </tr>
@@ -454,13 +343,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Musculación y preparación física 2 es un electivo de formación general de carácter teórico-práctico que integra los conocimientos, habilidades y técnicas aprendidas en la asignatura de Musculación 1. Este curso busca desarrollar en los estudiantes competencias para diseñar programas de entrenamientos personalizados más avanzados en el área de la musculación, con un enfoque en la seguridad, la técnica correcta,  y la prevención de lesiones en el entrenamiento de la fuerza. La asignatura busca desarrollar en los estudiantes una conciencia crítica sobre los beneficios de la actividad física para la salud y el bienestar, fomentando hábitos de vida saludables y activos.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes, miércoles y viernes</div>
-      <div class="sesion-horario">9:40 - 10:40</div>
-      <div class="sesion-sala">Sala de Musculación Gim. Andres Bello</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes, miércoles y viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">9:40 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala de Musculación Gim. Andres Bello</div></td>
       <td>Claudia Vargas</td>
       <td class="vac">3</td>
     </tr>
@@ -471,13 +356,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura presencial centrada en la lectura y el análisis de cuentos fantásticos latinoamericanos. Promueve el gusto por la lectura, el pensamiento crítico y el desarrollo de habilidades interpretativas y comunicativas, mediante la reflexión y expresión oral y escrita de ideas propias.</div></details>
       </td>
       <td>3</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Viernes</div>
-      <div class="sesion-horario">8:30 - 10:40</div>
-      <div class="sesion-sala">DITFO 204</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 204</div></td>
       <td>Javiera Ibaceta</td>
       <td class="vac">2</td>
     </tr>
@@ -488,13 +369,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Se trata de una asignatura teórico práctica, que pretende, por un lado, abordar la problemática de las drogodependencias desde la óptica familiar, y por otro, otorgar herramientas para desarrollar acciones de prevención desde el futuro ejercicio profesional del estudiante universitario, aportando así al desafío de responsabilidad social. La idea es poder concluir este curso, con una propuesta de prevención en drogodependencias, tomando como referente el espacio social de las carreras profesionales que estudian los alumnos inscritos en la misma.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">16:50 - 20:10</div>
-      <div class="sesion-sala">D 201</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">16:50 - 20:10</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">D 201</div></td>
       <td>José Salazar</td>
       <td class="vac">3</td>
     </tr>
@@ -505,13 +382,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura tiene como objetivo profundizar en los conocimientos sobre la promoción de la salud en el marco del enfoque de determinantes sociales de la salud, con un abordaje de trabajo en equipo y una mirada integradora desde los diversos sectores involucrados en la gestión territorial de barrios en Chile. Es de carácter teórico-práctico y busca entregar herramientas para que estudiantes de diversas carreras confluyan en el trabajo interdisciplinario.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">DITFO 106</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 106</div></td>
       <td>Paola Olave</td>
       <td class="vac">1</td>
     </tr>
@@ -522,13 +395,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura tiene como objetivo profundizar en los conocimientos sobre la promoción de la salud en el marco del enfoque de determinantes sociales de la salud, con un abordaje de trabajo en equipo y una mirada integradora desde los diversos sectores involucrados en la gestión territorial de barrios en Chile. Es de carácter teórico-práctico y busca entregar herramientas para que estudiantes de diversas carreras confluyan en el trabajo interdisciplinario.</div></details>
       </td>
       <td>2</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">DITFO 204</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 204</div></td>
       <td>Paola Olave</td>
       <td class="vac">1</td>
     </tr>
@@ -539,13 +408,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Permitirá a los estudiantes conocer aspectos histórico contextuales respecto de cómo se ha construido la relación entre la sociedad mapuche y la sociedad chilena que llegó a Wallmapu con los procesos de colonización e integración al estado nación chileno.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Sala Instituto de Estudios Indígenas</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Instituto de Estudios Indígenas</div></td>
       <td>Miguel Melin</td>
       <td class="vac">7</td>
     </tr>
@@ -556,13 +421,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que aborda la salud pública desde una perspectiva intercultural, con énfasis en la relación entre el Estado chileno y el pueblo mapuche. Integra conocimientos de salud colectiva, antropología médica, epidemiología y gestión sanitaria para comprender los procesos de salud y enfermedad en contextos de diversidad cultural.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">8.30 - 11:50</div>
-      <div class="sesion-sala">SA 111 (Fac. Medicina)</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8.30 - 11:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">SA 111 (Fac. Medicina)</div></td>
       <td>Ricardo Cuyul</td>
       <td class="vac">21</td>
     </tr>
@@ -573,13 +434,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura que analiza la evolución histórica de la salud mental y su relación con la ciencia, el Estado y la sociedad. Promueve una comprensión crítica de temas como medicalización, derechos, desigualdades y políticas públicas, vinculándolos con el bienestar y la justicia social.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">10:50 - 13:00</div>
-      <div class="sesion-sala">SA 208 (Fac. Medicina)</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">SA 208 (Fac. Medicina)</div></td>
       <td>César Leyton</td>
       <td class="vac">1</td>
     </tr>
@@ -590,19 +447,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">12:00 - 13:00</div>
-      <div class="sesion-sala">Piscina</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Martes y miércoles</div>
-      <div class="sesion-horario">8:30 - 9:30</div>
-      <div class="sesion-sala">Piscina</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Martes y miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">12:00 - 13:00</div><div class="sesion-line sesion-horario">8:30 - 9:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Piscina</div><div class="sesion-line sesion-sala">Piscina</div></td>
       <td>Claudio Muñoz</td>
       <td class="vac">8</td>
     </tr>
@@ -613,19 +460,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
       </td>
       <td>3</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">10:50 - 11:50</div>
-      <div class="sesion-sala">Piscina</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Martes y miércoles</div>
-      <div class="sesion-horario">9:40 - 10:40</div>
-      <div class="sesion-sala">Piscina</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Martes y miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 11:50</div><div class="sesion-line sesion-horario">9:40 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Piscina</div><div class="sesion-line sesion-sala">Piscina</div></td>
       <td>Claudio Muñoz</td>
       <td class="vac">15</td>
     </tr>
@@ -636,13 +473,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura práctica de nivel inicial que desarrolla habilidades básicas de natación y adaptación segura al medio acuático, con énfasis en los estilos crol y espalda. Promueve la seguridad, la responsabilidad y una vida activa y saludable.</div></details>
       </td>
       <td>4</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes, miércoles y viernes</div>
-      <div class="sesion-horario">10:50 - 11:50</div>
-      <div class="sesion-sala">Piscina</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes, miércoles y viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 11:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Piscina</div></td>
       <td>Claudio Muñoz</td>
       <td class="vac">1</td>
     </tr>
@@ -653,13 +486,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Esta asignatura invita a los estudiantes a realizar una exploración activa de símbolos tradicionales y modernos que llegan a nosotros a través de distintos medios y de los cuales no siempre conocemos su origen ni su historia. La asignatura entrega nociones teóricas básicas para desarrollar y fortalecer una actitud de búsqueda activa de información basada en las coordenadas culturales e históricas que permiten una adecuada interpretación de los símbolos. De esta manera pretende aportar a la formación del espíritu crítico y de las herramientas de información que ponen a nuestra disposición el acervo cultural necesario para la interpretación.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">10:50 - 13:00</div>
-      <div class="sesion-sala">Sala Seminario Biblioteca</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Sala Seminario Biblioteca</div></td>
       <td>Jorge Araya</td>
       <td class="vac">1</td>
     </tr>
@@ -670,13 +499,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>La asignatura Soluciones Creativas para Problemáticas Sociales es un espacio de aprendizaje vivencial que ofrece a los estudiantes distintas herramientas para que puedan desenvolverse de forma eficaz en equipos de trabajo y promover el logro de objetivos comunes. A través de una metodología activa, Aprendizaje y Servicio, los estudiantes elaborarán un proyecto de intervención social pasando por las etapas de diagnóstico, diseño o planificación, implementación o ejecución y cierre de proyecto.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Miércoles</div>
-      <div class="sesion-horario">10:50 - 13:00</div>
-      <div class="sesion-sala">DITFO 204</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 204</div></td>
       <td>Romina Sanchez</td>
       <td class="vac">1</td>
     </tr>
@@ -687,13 +512,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>El presente electivo posee un carácter teórico-práctico y tiene como objetivo reconocer los distintos tipos de acordes en el ukelele, sus posibilidades de acompañamiento y lógica de estructuración. Las y los estudiantes podrán interpretar secuencias de acordes de música popular y fortalecer el trabajo en equipo.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Lunes</div>
-      <div class="sesion-horario">19:10 - 21:20</div>
-      <div class="sesion-sala">DITFO 104</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">19:10 - 21:20</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">DITFO 104</div></td>
       <td>Marcos Vera</td>
       <td class="vac">1</td>
     </tr>
@@ -704,19 +525,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica centrada en el voleibol femenino, sus fundamentos y el desarrollo de habilidades deportivas. Promueve la participación, el bienestar físico y emocional, y la adopción de un estilo de vida activo y saludable.</div></details>
       </td>
       <td>1</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">16:50 - 17:50</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div><div class="sesion-line sesion-horario">16:50 - 17:50</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div></td>
       <td>Javiera Parada</td>
       <td class="vac">1</td>
     </tr>
@@ -727,19 +538,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         <details class="desc"><summary>Ver descripción</summary><div>Asignatura teórico-práctica centrada en el voleibol femenino, sus fundamentos y el desarrollo de habilidades deportivas. Promueve la participación, el bienestar físico y emocional, y la adopción de un estilo de vida activo y saludable.</div></details>
       </td>
       <td>2</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia">Martes</div>
-      <div class="sesion-horario">16:50 - 17:50</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  
-    <div class="sesion">
-      <div class="sesion-dia">Jueves</div>
-      <div class="sesion-horario">14:30 - 16:40</div>
-      <div class="sesion-sala">Cancha 1, Gimnasio Olímpico</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">16:50 - 17:50</div><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div><div class="sesion-line sesion-sala">Cancha 1, Gimnasio Olímpico</div></td>
       <td>Javiera Parada</td>
       <td class="vac">12</td>
     </tr></tbody>
@@ -755,15 +556,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">14:30 - 15:30</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 15:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
       </div>
@@ -779,9 +580,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">8:30 - 10:40</div>
-            <div class="card-sala">DITFO 101</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 101</div>
           </div>
         
       </div>
@@ -797,9 +598,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">18:00 - 20:10</div>
-            <div class="card-sala">DITFO 204</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>18:00 - 20:10</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 204</div>
           </div>
         
       </div>
@@ -815,15 +616,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">12:00 - 13:00</div>
-            <div class="card-sala">D-102</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>12:00 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>D-102</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">10:50 - 13:00</div>
-            <div class="card-sala">D-105</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>D-105</div>
           </div>
         
       </div>
@@ -839,9 +640,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">DITFO 203</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 203</div>
           </div>
         
       </div>
@@ -857,13 +658,13 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">8:30 - 10:40</div>
-            <div class="card-sala">Sala Seminario Biblioteca</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Seminario Biblioteca</div>
           </div>
         
       </div>
-      <p class="docente">Gonzalo Berrueta</p>
+      <p class="docente">Paloma Carvajal</p>
       <details class="desc"><summary>Ver descripción</summary><div>Asignatura destinada a generar capacidades de comprensión de los fenómenos de diversidad sociocultural, con énfasis en la diversidad de género, y su vinculación con la comunicación social. Su propósito específico se orienta a desarrollar capacidades de interpretación de los fenómenos comunicacionales propios de una sociedad pluralista, entregando técnicas, teoría y estrategias para su abordaje desde una perspectiva valórica, crítica y socialmente responsable.</div></details>
     </article>
     <article class="card">
@@ -875,9 +676,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">18:00 - 20:10</div>
-            <div class="card-sala">DITFO 204</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>18:00 - 20:10</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 204</div>
           </div>
         
       </div>
@@ -893,15 +694,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Sala Multipropósito G.O</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Multipropósito G.O</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">16:50 - 17:50</div>
-            <div class="card-sala">Sala Multipropósito G.O</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Multipropósito G.O</div>
           </div>
         
       </div>
@@ -917,15 +718,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Sala Multipropósito G.O</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Multipropósito G.O</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">16:50 - 17:50</div>
-            <div class="card-sala">Sala Multipropósito G.O</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Multipropósito G.O</div>
           </div>
         
       </div>
@@ -941,15 +742,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">16:50 - 17:50</div>
-            <div class="card-sala">Sala Multipropósito G.O</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Multipropósito G.O</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Sala Multipropósito G.O</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Multipropósito G.O</div>
           </div>
         
       </div>
@@ -965,15 +766,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes y jueves</div>
-            <div class="card-horario">12:00 - 13:00</div>
-            <div class="card-sala">Cancha Fútbol 2</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes y jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>12:00 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha Fútbol 2</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Viernes</div>
-            <div class="card-horario">8:30 - 9:30</div>
-            <div class="card-sala">Cancha Fútbol 2</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 9:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha Fútbol 2</div>
           </div>
         
       </div>
@@ -989,15 +790,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">10:50 - 13:00</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">12:00 - 13:00</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 9:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
       </div>
@@ -1013,9 +814,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">14:30 - 17:50</div>
-            <div class="card-sala">Calle Carrera 228</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Calle Carrera 228</div>
           </div>
         
       </div>
@@ -1031,9 +832,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">10:50 - 13:00</div>
-            <div class="card-sala">Auditorio DITFO</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Auditorio DITFO</div>
           </div>
         
       </div>
@@ -1049,9 +850,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">8:30 - 10:40</div>
-            <div class="card-sala">Sala Seminario Biblioteca</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Seminario Biblioteca</div>
           </div>
         
       </div>
@@ -1067,9 +868,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">9:40 - 13:00</div>
-            <div class="card-sala">Sala Danza Prat</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>9:40 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Danza Prat</div>
           </div>
         
       </div>
@@ -1085,9 +886,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Viernes</div>
-            <div class="card-horario">8:30 - 11:50</div>
-            <div class="card-sala">Sala de Teatro Los Avellanos</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 11:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala de Teatro Los Avellanos</div>
           </div>
         
       </div>
@@ -1103,9 +904,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">14:30 - 17:50</div>
-            <div class="card-sala">Sala Seminario Biblioteca</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Seminario Biblioteca</div>
           </div>
         
       </div>
@@ -1121,9 +922,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes, miércoles y viernes</div>
-            <div class="card-horario">9:40 - 10:40</div>
-            <div class="card-sala">Sala de Musculación Gim. Andres Bello</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes, miércoles y viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>9:40 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala de Musculación Gim. Andres Bello</div>
           </div>
         
       </div>
@@ -1139,9 +940,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Viernes</div>
-            <div class="card-horario">8:30 - 10:40</div>
-            <div class="card-sala">DITFO 204</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 204</div>
           </div>
         
       </div>
@@ -1157,9 +958,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">16:50 - 20:10</div>
-            <div class="card-sala">D 201</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 20:10</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>D 201</div>
           </div>
         
       </div>
@@ -1175,9 +976,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">DITFO 106</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 106</div>
           </div>
         
       </div>
@@ -1193,9 +994,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">DITFO 204</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 204</div>
           </div>
         
       </div>
@@ -1211,9 +1012,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Sala Instituto de Estudios Indígenas</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Instituto de Estudios Indígenas</div>
           </div>
         
       </div>
@@ -1229,9 +1030,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">8.30 - 11:50</div>
-            <div class="card-sala">SA 111 (Fac. Medicina)</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8.30 - 11:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>SA 111 (Fac. Medicina)</div>
           </div>
         
       </div>
@@ -1247,9 +1048,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">10:50 - 13:00</div>
-            <div class="card-sala">SA 208 (Fac. Medicina)</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>SA 208 (Fac. Medicina)</div>
           </div>
         
       </div>
@@ -1265,15 +1066,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">12:00 - 13:00</div>
-            <div class="card-sala">Piscina</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>12:00 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Piscina</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Martes y miércoles</div>
-            <div class="card-horario">8:30 - 9:30</div>
-            <div class="card-sala">Piscina</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes y miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 9:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Piscina</div>
           </div>
         
       </div>
@@ -1289,15 +1090,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">10:50 - 11:50</div>
-            <div class="card-sala">Piscina</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 11:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Piscina</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Martes y miércoles</div>
-            <div class="card-horario">9:40 - 10:40</div>
-            <div class="card-sala">Piscina</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes y miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>9:40 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Piscina</div>
           </div>
         
       </div>
@@ -1313,9 +1114,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes, miércoles y viernes</div>
-            <div class="card-horario">10:50 - 11:50</div>
-            <div class="card-sala">Piscina</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes, miércoles y viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 11:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Piscina</div>
           </div>
         
       </div>
@@ -1331,9 +1132,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">10:50 - 13:00</div>
-            <div class="card-sala">Sala Seminario Biblioteca</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Sala Seminario Biblioteca</div>
           </div>
         
       </div>
@@ -1349,9 +1150,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Miércoles</div>
-            <div class="card-horario">10:50 - 13:00</div>
-            <div class="card-sala">DITFO 204</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 204</div>
           </div>
         
       </div>
@@ -1367,9 +1168,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Lunes</div>
-            <div class="card-horario">19:10 - 21:20</div>
-            <div class="card-sala">DITFO 104</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>19:10 - 21:20</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>DITFO 104</div>
           </div>
         
       </div>
@@ -1385,15 +1186,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">16:50 - 17:50</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
       </div>
@@ -1409,15 +1210,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            <div class="card-dia">Martes</div>
-            <div class="card-horario">16:50 - 17:50</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 17:50</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
           <div class="card-sesion">
-            <div class="card-dia">Jueves</div>
-            <div class="card-horario">14:30 - 16:40</div>
-            <div class="card-sala">Cancha 1, Gimnasio Olímpico</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Cancha 1, Gimnasio Olímpico</div>
           </div>
         
       </div>
@@ -1440,7 +1241,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th>
+        <th>Día</th><th>Horario</th><th>Sala</th>
         <th>Cupos</th>
       </tr></thead>
       <tbody>
@@ -1451,13 +1253,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>2</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00</div>
-      <div class="sesion-sala">New Zealand / Scottish</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div><div class="sesion-line sesion-horario">12:00 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">New Zealand</div><div class="sesion-line sesion-sala">Scottish</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1468,13 +1266,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>3</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Lunes 10:50 a 13:00 y Jueves 9:40 a 10:40</div>
-      <div class="sesion-sala">Canadian</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div><div class="sesion-line sesion-horario">9:40 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Canadian</div><div class="sesion-line sesion-sala">Canadian</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1485,13 +1279,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>6</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Martes 8:30 a 10:40 y Viernes 8:30 a 9:30</div>
-      <div class="sesion-sala">American</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Martes</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div><div class="sesion-line sesion-horario">8:30 - 9:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">American</div><div class="sesion-line sesion-sala">American</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1502,13 +1292,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>11</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Jueves 8:30 a 10:40 y Viernes 9:40 a 10:40</div>
-      <div class="sesion-sala">American</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Jueves</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div><div class="sesion-line sesion-horario">9:40 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">American</div><div class="sesion-line sesion-sala">American</div></td>
       
       <td class="vac">2</td>
     </tr></tbody>
@@ -1523,9 +1309,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Lunes 10:50 a 13:00 y Miércoles 12:00 a 13:00</div>
-            <div class="card-sala">New Zealand / Scottish</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>New Zealand</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>12:00 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Scottish</div>
           </div>
         
       </div>
@@ -1541,9 +1333,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Lunes 10:50 a 13:00 y Jueves 9:40 a 10:40</div>
-            <div class="card-sala">Canadian</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Canadian</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>9:40 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Canadian</div>
           </div>
         
       </div>
@@ -1559,9 +1357,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Martes 8:30 a 10:40 y Viernes 8:30 a 9:30</div>
-            <div class="card-sala">American</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Martes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>American</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 9:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>American</div>
           </div>
         
       </div>
@@ -1577,9 +1381,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Jueves 8:30 a 10:40 y Viernes 9:40 a 10:40</div>
-            <div class="card-sala">American</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>American</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>9:40 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>American</div>
           </div>
         
       </div>
@@ -1593,7 +1403,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th>
+        <th>Día</th><th>Horario</th><th>Sala</th>
         <th>Cupos</th>
       </tr></thead>
       <tbody>
@@ -1604,13 +1415,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>4</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Lunes 10:50 a 13:00 y Viernes 12:00 a 13:00</div>
-      <div class="sesion-sala">English</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div><div class="sesion-line sesion-horario">12:00 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">English</div><div class="sesion-line sesion-sala">English</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1621,13 +1428,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>5</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Lunes 14:30 a 16:40 y Viernes 15:40 a 16:40</div>
-      <div class="sesion-sala">English</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div><div class="sesion-line sesion-horario">15:40 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">English</div><div class="sesion-line sesion-sala">English</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1638,13 +1441,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>16</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Miércoles 14:30 a 16:40 y Viernes 14:30 a 15:30</div>
-      <div class="sesion-sala">English</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div><div class="sesion-line sesion-horario">14:30 - 15:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">English</div><div class="sesion-line sesion-sala">English</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1655,13 +1454,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>18</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Miércoles 16:50 a 19:00 y Jueves 15:40 a 16:40</div>
-      <div class="sesion-sala">New Zealand</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div><div class="sesion-line sesion-dia">Jueves</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">16:50 - 19:00</div><div class="sesion-line sesion-horario">15:40 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">New Zealand</div><div class="sesion-line sesion-sala">New Zealand</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1672,13 +1467,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>19</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Jueves 8:30 a 10:40 y Viernes 8:30 a 9:30</div>
-      <div class="sesion-sala">English</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Jueves</div><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div><div class="sesion-line sesion-horario">8:30 - 9:30</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">English</div><div class="sesion-line sesion-sala">English</div></td>
       
       <td class="vac">1</td>
     </tr></tbody>
@@ -1693,9 +1484,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Lunes 10:50 a 13:00 y Viernes 12:00 a 13:00</div>
-            <div class="card-sala">English</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>12:00 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
           </div>
         
       </div>
@@ -1711,9 +1508,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Lunes 14:30 a 16:40 y Viernes 15:40 a 16:40</div>
-            <div class="card-sala">English</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>15:40 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
           </div>
         
       </div>
@@ -1729,9 +1532,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Miércoles 14:30 a 16:40 y Viernes 14:30 a 15:30</div>
-            <div class="card-sala">English</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 15:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
           </div>
         
       </div>
@@ -1747,9 +1556,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Miércoles 16:50 a 19:00 y Jueves 15:40 a 16:40</div>
-            <div class="card-sala">New Zealand</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>16:50 - 19:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>New Zealand</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>15:40 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>New Zealand</div>
           </div>
         
       </div>
@@ -1765,9 +1580,15 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Jueves 8:30 a 10:40 y Viernes 8:30 a 9:30</div>
-            <div class="card-sala">English</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Jueves</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
+          </div>
+        
+          <div class="card-sesion">
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 9:30</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>English</div>
           </div>
         
       </div>
@@ -1781,7 +1602,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th>
+        <th>Día</th><th>Horario</th><th>Sala</th>
         <th>Cupos</th>
       </tr></thead>
       <tbody>
@@ -1792,13 +1614,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>2</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Lunes 8:30 a 10:40</div>
-      <div class="sesion-sala">Australian</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Australian</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1809,13 +1627,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>19</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Miércoles 14:30 a 16:40</div>
-      <div class="sesion-sala">Australian</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Miércoles</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">14:30 - 16:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Australian</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1826,13 +1640,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>29</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Viernes 10:50 a 13:00</div>
-      <div class="sesion-sala">Indian</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Indian</div></td>
       
       <td class="vac">1</td>
     </tr></tbody>
@@ -1847,9 +1657,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Lunes 8:30 a 10:40</div>
-            <div class="card-sala">Australian</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Australian</div>
           </div>
         
       </div>
@@ -1865,9 +1675,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Miércoles 14:30 a 16:40</div>
-            <div class="card-sala">Australian</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Miércoles</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>14:30 - 16:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Australian</div>
           </div>
         
       </div>
@@ -1883,9 +1693,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Viernes 10:50 a 13:00</div>
-            <div class="card-sala">Indian</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Indian</div>
           </div>
         
       </div>
@@ -1899,7 +1709,8 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th><th>Sesiones</th>
+        <th>Código</th><th>Asignatura / Nivel</th><th>Módulo</th>
+        <th>Día</th><th>Horario</th><th>Sala</th>
         <th>Cupos</th>
       </tr></thead>
       <tbody>
@@ -1910,13 +1721,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>3</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Lunes 10:50 a 13:00</div>
-      <div class="sesion-sala">Scottish</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Lunes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">10:50 - 13:00</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Scottish</div></td>
       
       <td class="vac">1</td>
     </tr>
@@ -1927,13 +1734,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
         
       </td>
       <td>15</td>
-      <td class="sesiones-cell">
-    <div class="sesion">
-      <div class="sesion-dia"></div>
-      <div class="sesion-horario">Viernes 8:30 a 10:40</div>
-      <div class="sesion-sala">Irish</div>
-    </div>
-  </td>
+      <td class="sesion-col"><div class="sesion-line sesion-dia">Viernes</div></td>
+      <td class="sesion-col"><div class="sesion-line sesion-horario">8:30 - 10:40</div></td>
+      <td class="sesion-col sala-col"><div class="sesion-line sesion-sala">Irish</div></td>
       
       <td class="vac">1</td>
     </tr></tbody>
@@ -1948,9 +1751,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Lunes 10:50 a 13:00</div>
-            <div class="card-sala">Scottish</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Lunes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>10:50 - 13:00</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Scottish</div>
           </div>
         
       </div>
@@ -1966,9 +1769,9 @@ td.vac{font-size:18px;font-weight:800;text-align:center}
       <div class="card-sesiones">
         
           <div class="card-sesion">
-            
-            <div class="card-horario">Viernes 8:30 a 10:40</div>
-            <div class="card-sala">Irish</div>
+            <div class="card-dia"><span class="campo-label">Día</span>Viernes</div>
+            <div class="card-horario"><span class="campo-label">Horario</span>8:30 - 10:40</div>
+            <div class="card-sala"><span class="campo-label">Sala</span>Irish</div>
           </div>
         
       </div>
